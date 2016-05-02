@@ -96,8 +96,21 @@ public class Animal
 	/**
 	 * Animal class constructor
 	 */
-	public Animal(){
-		
+	public Animal(int Age, String Birth_method, String Consevervation_status, String Diet, boolean Flight, String Habit, boolean heathly, int height, String Last_Checkup, int Length, int Lifespan, String Location, String Name, int Weight){
+		this.Age = Age;
+		this.Birth_method = Birth_method;
+		this.Conservation_status = Consevervation_status;
+		this.Diet = Diet;
+		this.Flight = Flight;
+		this.Habit = Habit;
+		this.Healthy = heathly;
+		this.Height = height;
+		this.Last_Checkup = Last_Checkup;
+		this.Length = Length;
+		this.Lifespan = Lifespan;
+		this.Location = Location;
+		this.Name = Name;
+		this.Weight = Weight;
 	}
 
 	/**
@@ -130,12 +143,14 @@ public class Animal
 	@Override
 	public String toString(){
 		String temp = "Infomation for ";
-		temp += getName() + this.getClass().getName() + "\n";
+		temp += getName() + " " + this.getClass().getName() + "\n";
 		temp += "Age in Years: " + getAge() + "\n";
 		temp += "Birth Method: " + getBirth() + "\n";
 		temp += "Diet: " + getDiet() + "\n";
-		temp += "Can it fly? " + ((getFlight()) ? "Yes" : "no");
+		temp += "Can it fly? " + ((getFlight()) ? "Yes" : "no") + "\n";
 		temp += "Natural Habit: " + getHabit() + "\n";
+		temp += "Is it Healthy? " + ((getHealth()) ? "Yes" : "no") + "\n";
+		temp += "Hieght in inches: " + getHieght() + "\n";
 		temp += "Last check up was on: " + getLastC() + "\n";
 		temp += "Length in inches: " + getLength() + "\n";
 		temp += "Average Lifespan in years: " + getLife() + "\n";

@@ -27,13 +27,13 @@ public class Mammal extends Animal
 	 * <!--  end-user-doc  -->
 	 * @generated
 	 */
-	public Mammal(){
-		super();
+	public Mammal(int Age, String Birth_method, String Consevervation_status, String Diet, boolean Flight, String Habit, boolean heathly, int height, String Last_Checkup, int Length, int Lifespan, String Location, String Name, int Weight){
+		super(Age, Birth_method, Consevervation_status, Diet, Flight,  Habit, heathly, height, Last_Checkup, Length, Lifespan, Location, Name, Weight);
 	}
 	
 	@Override
 	public String toString(){
-		return super.toString() + " mammal";
+		return super.toString();
 	}
 }
 
