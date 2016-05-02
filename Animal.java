@@ -134,7 +134,7 @@ public class Animal
 		temp += "Age in Years: " + getAge() + "\n";
 		temp += "Birth Method: " + getBirth() + "\n";
 		temp += "Diet: " + getDiet() + "\n";
-		temp += "Can it fly? " + (getFlight()) ? "Yes" : "no";
+		temp += "Can it fly? " + ((getFlight()) ? "Yes" : "no");
 		temp += "Natural Habit: " + getHabit() + "\n";
 		temp += "Last check up was on: " + getLastC() + "\n";
 		temp += "Length in inches: " + getLength() + "\n";
@@ -143,5 +143,4 @@ public class Animal
 		temp += "Weight in pounds: " + getWeight() + "\n";
 		return temp;
 	}
-	// this is Bakr's comment
 }
