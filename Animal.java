@@ -143,4 +143,5 @@ public class Animal
 		temp += "Weight in pounds: " + getWeight() + "\n";
 		return temp;
 	}
+	// this is Bakr's comment
 }
