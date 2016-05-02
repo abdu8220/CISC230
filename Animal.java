@@ -146,6 +146,7 @@ public class Animal
 		temp += getName() + " " + this.getClass().getName() + "\n";
 		temp += "Age in Years: " + getAge() + "\n";
 		temp += "Birth Method: " + getBirth() + "\n";
+		temp += "Conservation Satus" + getCon() + "\n";
 		temp += "Diet: " + getDiet() + "\n";
 		temp += "Can it fly? " + ((getFlight()) ? "Yes" : "no") + "\n";
 		temp += "Natural Habit: " + getHabit() + "\n";
