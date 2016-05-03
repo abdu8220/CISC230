@@ -18,18 +18,3 @@
 1,
 2,
 3,
-
-
-Type: 0->Amphibian(NumberOfLegs), 1->Bird(FlightSpeed(MPH),WingSpan(in)), 2-> Mammal(NumberOfArms,NumberOfLegs), 3->Fish(#Fins,SwimSpeed(mph),WaterTemp(F))
-Name	
-Age 
-Conservation_Status 
-Diet 
-Fly? 
-Natural_Habit
-Healthy? 
-Last_Checkup
-Lifespan 
-Location 
-Weight(LBS OR OUNCES)
-
