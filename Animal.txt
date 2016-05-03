@@ -1,36 +1,35 @@
-0,Komodo monitor,11,?BIRTH_METHOD?,VU,Boar,false,Island Savanna Tropical Forest,true,N/A,12/23/2015,20,Tropics Trail,150lbs
-1,Rhinoceros Hornbill,20,?BIRTH_METHOD?,NT,Fruits,true,Island Tropical Forest,true,N/A,02/06/2016,N/A,35,Tropics Trail,5lbs
-2,Red Panda,7,?BIRTH_METHOD?,EN,Bamboo leaves,false,Temperate Forest/Taiga,true,N/A,10/15/2015,N/A,Tropics Trail,10lbs
-3,Sand Tiger Shark,5,?BIRTH_METHOD?,VU,Bony fish,false,Ocean,false,N/A,06/09/2014,N/A,13,Discovery Bay,300
-0,West African Dwarf Crocodile,72,?BIRTH_METHOD?,VU,Crabs,false,Wetland,true,N/A,03/02/2015,5,100,Tropics Trail,55lbs
+0,Komodo monitor,11,VU,Boar,false,Island Savanna Tropical Forest,true,12/23/2015,20,Tropics Trail,150,4#DONE
+1,Rhinoceros Hornbill,20,NT,Fruits,true,Island Tropical Forest,true,02/06/2016,35,Tropics Trail,5,19,60#DONE
+2,Red Panda,7,EN,Bamboo leaves,false,Temperate Forest/Taiga,true,10/15/2015,Tropics Trail,10,2,2#DONE
+3,Sand Tiger Shark,5,VU,Bony fish,false,Ocean,false,06/09/2014,13,Discovery Bay,300,2.4,61#DONE
+0,West African Dwarf Crocodile,72,VU,Crabs,false,Wetland,true,03/02/2015,100,Tropics Trail,55,4#Done
+1,Bald Eagle,6,LC,Ducks,true,Wetland Temperate Forest/Taiga,true,03/06/2015,50,Medtronic Minnesota Trail,10lbs,99,90#DONE
+2,African Fruit Bat,4,LC,Figs,true,Savanna and Tropical Forest,true,10/13/2014,15,Tropics Trail,9ounces,0,2#DONE
+3,Southern Stingray,6,DD,Mollusks,false,Ocean,true,12/12/2012,12,Discovery Bay,120lbs,4,65,86#DONE
+1,Great Horned Owl,14,LC,Mice,true,Prairie,true,01/23/2016,50,Minnesota Trail,3.5lbs,40,48#DONE
+2,De Brazza’s Monkey,9,LC,Ripe fruit,false,Tropical Forest,false,04/29/2016,30,Tropics Trail,12lbs,2,2,#DONE
+3,Coyote,5,LC,Rabbits,false,Temperate Forest/Taiga,true,12/23/2015,13,Medtronic Minnesota Trail,30,2,2#DONE
 1,
-2,African Fruit Bat,4,?BIRTH_METHOD?,LC,Figs,true,Savanna and Tropical Forest,true,N/A,10/13/2014,N/A,15,Tropics Trail,9ounces
-3
-0
-1
-2
-3,Southern Stingray,6,?BIRTH_METHOD?,DD,Mollusks,false,Ocean,true,N/A,12/12/2012,N/A,12,Discovery Bay,120lbs
-0
-1
-2
-3
-0
-1
-2
-3
-Type: 0->Amphibian, 1->Bird, 2-> Mammal, 3->Fish
-Name
+2,
+3.
+1,
+2,
+3,
+1,
+2,
+3,
+
+
+Type: 0->Amphibian(NumberOfLegs), 1->Bird(FlightSpeed(MPH),WingSpan(in)), 2-> Mammal(NumberOfArms,NumberOfLegs), 3->Fish(#Fins,SwimSpeed(mph),WaterTemp(F))
+Name	
 Age 
-Birth_Method 
 Conservation_Status 
 Diet 
 Fly? 
 Natural_Habit
 Healthy? 
-Height
 Last_Checkup
-Length
 Lifespan 
 Location 
-Weight
+Weight(LBS OR OUNCES)
 
