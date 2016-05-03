@@ -1,0 +1,36 @@
+0,Komodo monitor,11,?BIRTH_METHOD?,VU,Boar,false,Island Savanna Tropical Forest,true,N/A,12/23/2015,20,Tropics Trail,150lbs
+1,Rhinoceros Hornbill,20,?BIRTH_METHOD?,NT,Fruits,true,Island Tropical Forest,true,N/A,02/06/2016,N/A,35,Tropics Trail,5lbs
+2,Red Panda,7,?BIRTH_METHOD?,EN,Bamboo leaves,false,Temperate Forest/Taiga,true,N/A,10/15/2015,N/A,Tropics Trail,10lbs
+3,Sand Tiger Shark,5,?BIRTH_METHOD?,VU,Bony fish,false,Ocean,false,N/A,06/09/2014,N/A,13,Discovery Bay,300
+0,West African Dwarf Crocodile,72,?BIRTH_METHOD?,VU,Crabs,false,Wetland,true,N/A,03/02/2015,5,100,Tropics Trail,55lbs
+1,
+2,African Fruit Bat,4,?BIRTH_METHOD?,LC,Figs,true,Savanna and Tropical Forest,true,N/A,10/13/2014,N/A,15,Tropics Trail,9ounces
+3
+0
+1
+2
+3,Southern Stingray,6,?BIRTH_METHOD?,DD,Mollusks,false,Ocean,true,N/A,12/12/2012,N/A,12,Discovery Bay,120lbs
+0
+1
+2
+3
+0
+1
+2
+3
+Type: 0->Amphibian, 1->Bird, 2-> Mammal, 3->Fish
+Name
+Age 
+Birth_Method 
+Conservation_Status 
+Diet 
+Fly? 
+Natural_Habit
+Healthy? 
+Height
+Last_Checkup
+Length
+Lifespan 
+Location 
+Weight
+
