@@ -10,7 +10,7 @@
 2,De Brazza’s Monkey,9,LC,Ripe fruit,false,Tropical Forest,false,04/29/2016,30,Tropics Trail,12lbs,2,2,#DONE
 3,Coyote,5,LC,Rabbits,false,Temperate Forest/Taiga,true,12/23/2015,13,Medtronic Minnesota Trail,30,2,2#DONE
 1,
-2,
+2,Binturong,5,VU,,Banana,false,
 3.
 1,
 2,
