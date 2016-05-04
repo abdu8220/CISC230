@@ -1,4 +1,4 @@
-Type: 1->Amphibian(NumberOfLegs), 2->Bird(FlightSpeed(MPH),WingSpan(in)), 3-> Mammal(NumberOfArms,NumberOfLegs), 4->Fish(#Fins,SwimSpeed(mph),WaterTemp(F))
+Type: 0 -> Animal 1->Amphibian(NumberOfLegs), 2->Bird(FlightSpeed(MPH),WingSpan(in)), 3-> Mammal(NumberOfArms,NumberOfLegs), 4->Fish(#Fins,SwimSpeed(mph),WaterTemp(F))
 Name	
 Age 
 Conservation_Status 
