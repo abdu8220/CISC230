@@ -14,8 +14,8 @@ public class Bird extends Animal
 	public int getWingspan(){
 		return Wingspan;
 	}
-	public Bird(int Age, String Birth_method, String Consevervation_status, String Diet, boolean Flight, String Habit, boolean heathly, int height, String Last_Checkup, int Length, int Lifespan, String Location, String Name, int Weight, int FlightSpeed,int Wingspan){
-		super(Age, Birth_method, Consevervation_status, Diet, Flight,  Habit, heathly, height, Last_Checkup, Length, Lifespan, Location, Name, Weight);
+	public Bird(String Consevervation_status, String Diet, boolean Flight, String Habit, boolean heathly, int height, String Last_Checkup, int Length, int Lifespan, String Location, String Name, int Weight, int FlightSpeed,int Wingspan){
+		super(Consevervation_status, Diet, Flight,  Habit, heathly, height, Last_Checkup, Length, Lifespan, Location, Name, Weight);
 		this.FlightSpeed = FlightSpeed;
 		this.Wingspan = Wingspan;
 	}
