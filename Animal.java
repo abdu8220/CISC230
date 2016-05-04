@@ -6,19 +6,7 @@
  * @since			4/26/16
  */
 public class Animal
-{
-	/**
-	 * Age in number of years
-	 */
-	public int Age;
-	public int getAge(){ return Age; }
-	
-	/**
-	 * Either "Egg" or "Birth"
-	 */
-	public String Birth_method;
-	public String getBirth(){ return Birth_method; }
-	
+{	
 	/**
 	 *I don't really know what this is
 	 */
@@ -96,9 +84,7 @@ public class Animal
 	/**
 	 * Animal class constructor
 	 */
-	public Animal(int Age, String Birth_method, String Consevervation_status, String Diet, boolean Flight, String Habit, boolean heathly, int height, String Last_Checkup, int Length, int Lifespan, String Location, String Name, int Weight){
-		this.Age = Age;
-		this.Birth_method = Birth_method;
+	public Animal(String Consevervation_status, String Diet, boolean Flight, String Habit, boolean heathly, int height, String Last_Checkup, int Length, int Lifespan, String Location, String Name, int Weight){
 		this.Conservation_status = Consevervation_status;
 		this.Diet = Diet;
 		this.Flight = Flight;
@@ -144,8 +130,6 @@ public class Animal
 	public String toString(){
 		String temp = "Infomation for ";
 		temp += getName() + " " + this.getClass().getName() + "\n";
-		temp += "Age in Years: " + getAge() + "\n";
-		temp += "Birth Method: " + getBirth() + "\n";
 		temp += "Conservation Satus" + getCon() + "\n";
 		temp += "Diet: " + getDiet() + "\n";
 		temp += "Can it fly? " + ((getFlight()) ? "Yes" : "no") + "\n";
