@@ -28,8 +28,8 @@ public class Mammal extends Animal
 	@Override
 	public String toString(){
 		String info = super.toString();
-		info += "Number of Arms:" + getNumberOfArms() + "\n";
-		info += "Number of legs:" + getNumberOfLegs() + "\n";
+		info += "Number of Arms:" + getNumberOfArms() + ".\n";
+		info += "Number of legs:" + getNumberOfLegs() + ".\n";
 		
 		return info;
 	}
