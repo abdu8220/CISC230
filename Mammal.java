@@ -9,22 +9,13 @@ public class Mammal extends Animal
 	public int NumberOfArms;
 	public int NumberOfLegs;
 
-	public int getNumberOfArms()
-	{
-		return NumberOfArms;
-	}
-	public int getNumberOfLegs()
-	{
-		return NumberOfLegs;
-	}
+	public int getNumberOfArms() { return NumberOfArms; }
+	public int getNumberOfLegs() { return NumberOfLegs; }
 
-	public Mammal(String Name, int Age,String Consevervation_status,String Diet,boolean Flight,String Habit
-	,boolean Healthy,String Last_Checkup,int Lifespan,String Location,int Weight,int flightSpeed, int wingspan){
-		super(Name,Age,Consevervation_status,Diet,Flight,Habit,Healthy,Last_Checkup,Lifespan,Location,Weight);
-
+	public Mammal(int Age, String Consevervation_status, String Diet, boolean Flight, String Habit, boolean healthy, String Last_Checkup, int Lifespan, String Location, String Name, int Weight, int NumberOfArms, int NumberOfLegs){
+		super(Age, Consevervation_status, Diet, Flight,  Habit, healthy, Last_Checkup, Lifespan, Location, Name, Weight);
 		this.NumberOfArms = NumberOfArms;
 		this.NumberOfLegs = NumberOfLegs;
-
 	}
 
 	@Override

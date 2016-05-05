@@ -42,22 +42,10 @@ public class Animal
 	public boolean getHealth(){ return Healthy; }
 	
 	/**
-	 * Height in inches
-	 */
-	public int Height;
-	public int getHieght(){ return Height; }
-	
-	/**
 	 * String format for the date of the animal's last checkup {@code "MM/DD/YY"}
 	 */
 	public String Last_Checkup;
 	public String getLastC(){ return Last_Checkup; }
-	
-	/**
-	 *Length in inches
-	 */
-	public int Length;
-	public int getLength(){ return Length; }
 
 	/**
 	 *lifespan in years
@@ -86,16 +74,14 @@ public class Animal
 	/**
 	 * Animal class constructor
 	 */
-	public Animal(int Age, String Consevervation_status, String Diet, boolean Flight, String Habit, boolean heathly, int height, String Last_Checkup, int Length, int Lifespan, String Location, String Name, int Weight){
+	public Animal(int Age, String Consevervation_status, String Diet, boolean Flight, String Habit, boolean healthy, String Last_Checkup,  int Lifespan, String Location, String Name, int Weight){
 		this.Age = Age;
 		this.Conservation_status = Consevervation_status;
 		this.Diet = Diet;
 		this.Flight = Flight;
 		this.Habit = Habit;
-		this.Healthy = heathly;
-		this.Height = height;
+		this.Healthy = healthy;
 		this.Last_Checkup = Last_Checkup;
-		this.Length = Length;
 		this.Lifespan = Lifespan;
 		this.Location = Location;
 		this.Name = Name;
@@ -139,9 +125,7 @@ public class Animal
 		temp += "Can it fly? " + ((getFlight()) ? "Yes" : "no") + "\n";
 		temp += "Natural Habit: " + getHabit() + "\n";
 		temp += "Is it Healthy? " + ((getHealth()) ? "Yes" : "no") + "\n";
-		temp += "Hieght in inches: " + getHieght() + "\n";
 		temp += "Last check up was on: " + getLastC() + "\n";
-		temp += "Length in inches: " + getLength() + "\n";
 		temp += "Average Lifespan in years: " + getLife() + "\n";
 		temp += "Location in Zoo: " + getLoc() + "\n";
 		temp += "Weight in pounds: " + getWeight() + "\n";
