@@ -7,23 +7,24 @@ public class Bird extends Animal
 {
 	public int flightSpeed;
 	public int wingspan;
-	
+
 	public int getFlightSpeed(){
 		return flightSpeed;
 	}
 	public int getWingspan(){
 		return wingspan;
 	}
-	public Bird(int Age, String Birth_method, String Consevervation_status, String Diet, boolean Flight, String Habit, boolean heathly, int height, String Last_Checkup, int Length, int Lifespan, String Location, String Name, int Weight, int flightSpeed,int wingspan){
-		super(Age, Birth_method, Consevervation_status, Diet, Flight,  Habit, heathly, height, Last_Checkup, Length, Lifespan, Location, Name, Weight);
+	public Bird(String Name, int Age,String Consevervation_status,String Diet,boolean Flight,String Habit
+	,boolean Healthy,String Last_Checkup,int Lifespan,String Location,int Weight,int flightSpeed, int wingspan){
+		super(Name,Age,Consevervation_status,Diet,Flight,Habit,Healthy,Last_Checkup,Lifespan,Location,Weight);
 		this.flightSpeed = flightSpeed;
 		this.wingspan = wingspan;
 	}
 	public String toString()
 	{
 		String info = super.toString();
-		info += "Flight speed:" + getFlightSpeed() + " MPH.\n";
-		info += "Wingspan: " + getWingspan() + " IN.\n";
+		info += "Flight speed:" + getFlightSpeed() + " mph.\n";
+		info += "Wingspan: " + getWingspan() + " inch.\n";
 		return info;
 	}
 
