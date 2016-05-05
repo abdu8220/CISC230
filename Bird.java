@@ -14,7 +14,7 @@ public class Bird extends Animal
 	public int getWingspan(){
 		return wingspan;
 	}
-	public Bird(String Name, int Age,String Consevervation_status,String Diet,boolean Flight,String Habit
+	public Bird(int Age,String Consevervation_status,String Diet,boolean Flight,String Habit
 	,boolean Healthy,String Last_Checkup,int Lifespan,String Location,int Weight,int flightSpeed, int wingspan){
 		super(Name,Age,Consevervation_status,Diet,Flight,Habit,Healthy,Last_Checkup,Lifespan,Location,Weight);
 		this.flightSpeed = flightSpeed;

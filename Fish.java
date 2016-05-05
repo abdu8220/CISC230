@@ -11,31 +11,33 @@ public class Fish extends Animal
 	 * @generated
 	 * @ordered
 	 */
-	public int NumberOfFins;
+	public int numOfFins;
+	public int getNumOfFins(){return numOfFins;}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 * @ordered
-	 */
-	public int SwimSpeed;
+	public int swimSpeed;
+	public int getSwimSpeed(){return swimSpeed;}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 * @ordered
-	 */
-	public int WaterTemp;
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 */
-	public Fish(int Age, String Consevervation_status, String Diet, boolean Flight, String Habit, boolean heathly, int height, String Last_Checkup, int Length, int Lifespan, String Location, String Name, int Weight){
-		super(Age, Consevervation_status, Diet, Flight,  Habit, heathly, height, Last_Checkup, Length, Lifespan, Location, Name, Weight);
+	public int waterTemp;
+	public int getWaterTemp(){return waterTemp;}
+
+
+	public Fish(String Name, int Age,String Consevervation_status,String Diet,boolean Flight,String Habit
+		,boolean Healthy,String Last_Checkup,int Lifespan,String Location,int Weight,int numOfFins, int swimSpeed, int waterTemp){
+			super(Name,Age,Consevervation_status,Diet,Flight,Habit,Healthy,Last_Checkup,Lifespan,Location,Weight);
+
+			this.numOfFins = numOfFins;
+			this.swimSpeed = swimSpeed;
+			this.waterTemp = waterTemp;
+
+	}
+	public String toString()
+		{
+			String info = super.toString();
+			info += "Number of fins:" + getNumOfFins() + " fins.\n";
+			info += "Swim Speed: " + getSwimSpeed() + " mph.\n";
+			info += "Water temperature: " + getWaterTemp() + " F.\n";
+			return info;
 	}
 
 }

@@ -12,15 +12,18 @@ public class Amphibian extends Animal
 	 * @ordered
 	 */
 	public int NumberOfLegs;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!--  end-user-doc  -->
-	 * @generated
-	 */
-	public Amphibian(int Age, String Consevervation_status, String Diet, boolean Flight, String Habit, boolean healthy, int height, String Last_Checkup, int Length, int Lifespan, String Location, String Name, int Weight){
-		super(Age, Consevervation_status, Diet, Flight,  Habit, healthy, height, Last_Checkup, Length, Lifespan, Location, Name, Weight);
+	public int getNumberOfLegs()
+	{
+		return NumberOfLegs;
 	}
+
+	public Amphibian(String Name, int Age,String Consevervation_status,String Diet,boolean Flight,String Habit
+		,boolean Healthy,String Last_Checkup,int Lifespan,String Location,int Weight,int NumberOfLegs){
+
+		super(Name,Age,Consevervation_status,Diet,Flight,Habit,Healthy,Last_Checkup,Lifespan,Location,Weight);
+		this.NumberOfLegs = NumberOfLegs;
+	}
+
 
 }
 
