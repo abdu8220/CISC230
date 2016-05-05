@@ -14,7 +14,7 @@ public class Amphibian extends Animal
 	public int NumberOfLegs;
 	public int getNumberOfLegs(){ return NumberOfLegs; }
 
-	public Amphibian(int Age, String Consevervation_status, String Diet, boolean Flight, String Habit, boolean healthy, int height, String Last_Checkup, int Length, int Lifespan, String Location, String Name, int Weight, int NumberOfLegs){
+	public Amphibian(int Age, String Consevervation_status, String Diet, boolean Flight, String Habit, boolean healthy, String Last_Checkup, int Lifespan, String Location, String Name, int Weight, int NumberOfLegs){
 		super(Age, Consevervation_status, Diet, Flight,  Habit, healthy, Last_Checkup, Lifespan, Location, Name, Weight);
 		this.NumberOfLegs = NumberOfLegs;
 	}

@@ -12,7 +12,7 @@ public class Zoo {
 
 	public static void main(String[] args) throws IOException
 	{
-		String fileName = "Animals.txt";
+		String fileName = "Animal.txt";
 		String record = null;
 		StringTokenizer field;
 		File file = new File(fileName);
@@ -30,7 +30,6 @@ public class Zoo {
 		while (scan.hasNext())
 		{
 			try{
-
 			record = scan.nextLine();
 			field = new StringTokenizer(record,",");
 			animalType = Integer.parseInt(field.nextToken());
@@ -47,13 +46,12 @@ public class Zoo {
 			Location= field.nextToken();
 			Weight= Integer.parseInt(field.nextToken());
 
-
 				switch (animalType)
 				{
 
 					case 1:
 					numOfLegs = Integer.parseInt(field.nextToken());
-					AnimalsList.add(new Amphibian(Name,Age,Consevervation_status,Diet,Flight,Habit,Healthy,Last_Checkup,Lifespan,Location,Weight,numOfLegs));
+					AnimalsList.add(new Amphibian(Age, Consevervation_status, Diet, Flight,  Habit, Healthy, Last_Checkup, Lifespan, Location, Name, Weight, numOfLegs));
 					break;
 
 					case 2:
@@ -61,14 +59,14 @@ public class Zoo {
 					flightSpeed = Integer.parseInt(field.nextToken());
 					wingspan= Integer.parseInt(field.nextToken());
 
-					AnimalsList.add(new Bird(Name,Age,Consevervation_status,Diet,Flight,Habit,Healthy,Last_Checkup,Lifespan,Location,Weight,flightSpeed,wingspan));
+					AnimalsList.add(new Bird(Age, Consevervation_status, Diet, Flight,  Habit, Healthy, Last_Checkup, Lifespan, Location, Name, Weight, flightSpeed,wingspan));
 					break;
 
 					case 3:
 					numOfArms = Integer.parseInt(field.nextToken());
 					numOfLegs = Integer.parseInt(field.nextToken());
 
-					AnimalsList.add(new Mammal(Name,Age,Consevervation_status,Diet,Flight,Habit,Healthy,Last_Checkup,Lifespan,Location,Weight,numOfArms,numOfLegs));
+					AnimalsList.add(new Mammal(Age, Consevervation_status, Diet, Flight,  Habit, Healthy, Last_Checkup, Lifespan, Location, Name, Weight, numOfArms,numOfLegs));
 
 					break;
 
@@ -78,7 +76,7 @@ public class Zoo {
 					swimSpeed = Integer.parseInt(field.nextToken());
 					waterTemp = Integer.parseInt(field.nextToken());
 
-					AnimalsList.add(new Fish(Name,Age,Consevervation_status,Diet,Flight,Habit,Healthy,Last_Checkup,Lifespan,Location,Weight,numOfFins,swimSpeed,waterTemp));
+					AnimalsList.add(new Fish(Age, Consevervation_status, Diet, Flight,  Habit, Healthy, Last_Checkup, Lifespan, Location, Name, Weight, numOfFins,swimSpeed,waterTemp));
 					break;
 
 					default:
@@ -86,15 +84,18 @@ public class Zoo {
 
 				}
 
-			}catch (Exception e){System.out.println("This is an exception" + e);};
+			}
+			catch (Exception e){
+				System.out.println("This is an exception! " + Name);
+				e.printStackTrace();
+			};
 
 		}
 		scan.close();
 
-		for (int j=0; j<AnimalsList.size();j++)
+		for (int j = 0; j < AnimalsList.size(); j++)
 		{
-		System.out.println(AnimalsList.get(j));
-		System.out.println();
+			System.out.println(AnimalsList.get(j));
 		}
 	}
 
