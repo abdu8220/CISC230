@@ -1,20 +1,20 @@
-1,Komodo monitor,11,VU,Boar,false,Island Savanna Tropical Forest,true,12/23/2015,20,Tropics Trail,150,4#DONE
-2,Rhinoceros Hornbill,20,NT,Fruits,true,Island Tropical Forest,true,02/06/2016,35,Tropics Trail,5,19,60#DONE
-3,Red Panda,7,EN,Bamboo leaves,false,Temperate Forest/Taiga,true,10/15/2015,Tropics Trail,10,2,2#DONE
-4,Sand Tiger Shark,5,VU,Bony fish,false,Ocean,false,06/09/2014,13,Discovery Bay,300,2.4,61#DONE
-1,West African Dwarf Crocodile,72,VU,Crabs,false,Wetland,true,03/02/2015,100,Tropics Trail,55,4#Done
-2,Bald Eagle,6,LC,Duck,true,Wetland Temperate Forest/Taiga,true,03/06/2015,50,Medtronic Minnesota Trail,10lbs,99,90#DONE
-3,African Fruit Bat,4,LC,Figs,true,Savanna and Tropical Forest,true,10/13/2014,15,Tropics Trail,9ounces,0,2#DONE
-4,Southern Stingray,6,DD,Mollusks,false,Ocean,true,12/12/2012,12,Discovery Bay,120lbs,4,65,86#DONE
-2,Great Horned Owl,14,LC,Mice,true,Prairie,true,01/23/2016,50,Minnesota Trail,3.5lbs,40,48#DONE
-3,De Brazza’s Monkey,9,LC,Ripe fruit,false,Tropical Forest,false,04/29/2016,30,Tropics Trail,12lbs,2,2#DONE
-4,Coyote,5,LC,Rabbit,false,Temperate Forest/Taiga,true,12/23/2015,13,Medtronic Minnesota Trail,30,2,2#DONE
-2,Crested Oropendola,12,LC,Spider,true,Tropical and subtropical forests,true,02/03/2015,Tropics Trail,50,55#DONE
-3,Binturong,5,VU,,Banana,false,Island Tropical Forest,true,02/03/2016,20,Tropics Trail,30,2,2#DONE
-4.
-2,
-3,Southern 3-Banded Armadillo,6,NT,Ants,false,Grasslands,true,01/02/2016,19,Tropics Trail,3,2,2#DONE
-4,
-2,
-3,
-4,
+1,Komodo monitor,11,VU,Boar,false,Island Savanna Tropical Forest,true,12/23/2015,20,Tropics Trail,150,4
+2,Rhinoceros Hornbill,20,NT,Fruits,true,Island Tropical Forest,true,02/06/2016,35,Tropics Trail,5,19,60
+3,Red Panda,7,EN,Bamboo leaves,false,Temperate Forest/Taiga,true,10/15/2015,Tropics Trail,10,2,2
+4,Sand Tiger Shark,5,VU,Bony fish,false,Ocean,false,06/09/2014,13,Discovery Bay,300,6,20,61
+1,West African Dwarf Crocodile,72,VU,Crabs,false,Wetland,true,03/02/2015,100,Tropics Trail,55,4
+2,Bald Eagle,6,LC,Duck,true,Wetland Temperate Forest/Taiga,true,03/06/2015,50,Medtronic Minnesota Trail,10,30,90
+3,African Fruit Bat,4,LC,Figs,true,Savanna and Tropical Forest,true,10/13/2014,15,Tropics Trail,1,0,2
+4,Southern Stingray,6,DD,Mollusks,false,Ocean,true,12/12/2012,12,Discovery Bay,120,4,65,86
+2,Great Horned Owl,14,LC,Mice,true,Prairie,true,01/23/2016,50,Minnesota Trail,3,40,48
+3,De Brazza’s Monkey,9,LC,Ripe fruit,false,Tropical Forest,false,04/29/2016,30,Tropics Trail,12,2,2
+4,Leopard Shark,23,LC,Shrimp,false,Ocean,false,05/10/2016,30,Discovery Bay,38,5,30,54
+2,Crested Oropendola,12,LC,Spider,true,Tropical and subtropical forests,true,02/03/2015,Tropics Trail,50,55
+3,Binturong,5,VU,,Banana,false,Island Tropical Forest,true,02/03/2016,20,Tropics Trail,30,2,2
+4,Tarpon,29,NE,Crabs,false,Tropical and Temperate waters,false,05/09/2016,50,Discovery Bay,210,6,35,75
+2,African Penguin,3,EN,Anchovies,false,Ocean,true,05/11/2016,11,South Entry,6,0,30
+3,Southern 3-Banded Armadillo,6,NT,Ants,false,Grasslands,true,01/02/2016,19,Tropics Trail,3,2,2
+4,Cobia,4,NE,Squid,false,Ocean,true,12/12/2016,12,Discovery Bay,95,5,15,65
+2,Lady Ross’s Turaco,7,LC,Snails,true,Upper levels of evergreen forests,true,01/24/2016,15,Wings Financial World of Birds Show,1,15,18
+3,Coyote,5,LC,Rabbit,false,Temperate Forest/Taiga,true,12/23/2015,13,Medtronic Minnesota Trail,30,2,2
+3,Fisher,2,LC,Wild Berries,false,River,true,12/15/2015,10,Medtronic Minnesota Trail,4,2,2
