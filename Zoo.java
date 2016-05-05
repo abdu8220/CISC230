@@ -74,8 +74,9 @@ public class Zoo {
 
 					case 4:
 
-					numOfArms = Integer.parseInt(field.nextToken());
-					numOfLegs = Integer.parseInt(field.nextToken());
+					numOfFins = Integer.parseInt(field.nextToken());
+					swimSpeed = Integer.parseInt(field.nextToken());
+					waterTemp = Integer.parseInt(field.nextToken());
 
 					AnimalsList.add(new Fish(Name,Age,Consevervation_status,Diet,Flight,Habit,Healthy,Last_Checkup,Lifespan,Location,Weight,numOfFins,swimSpeed,waterTemp));
 					break;
