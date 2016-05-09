@@ -26,5 +26,9 @@ public class Mammal extends Animal
 
 		return info;
 	}
+		public void Feed(){
+
+		System.out.println(this.Name +" is fed " + this.Diet);
+	}
 }
 

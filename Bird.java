@@ -17,11 +17,16 @@ public class Bird extends Animal
 		this.wingspan = wingspan;
 	}
 
+
 	public String toString(){
 		String info = super.toString();
 		info += "Flight speed:" + getFlightSpeed() + " mph.\n";
 		info += "Wingspan: " + getWingspan() + " inch.\n";
 		return info;
+	}
+
+	public void Feed(){
+		System.out.println(this.Name +" is fed " + this.Diet);
 	}
 
 }

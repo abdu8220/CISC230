@@ -93,9 +93,16 @@ public class Zoo {
 		}
 		scan.close();
 
-		for (int j = 0; j < AnimalsList.size(); j++)
+		for (int i = 0; i < AnimalsList.size(); i++)
 		{
-			System.out.println(AnimalsList.get(j));
+			System.out.println(AnimalsList.get(i));
+		}
+
+		System.out.println("Feeding all of the zoo's animals");
+
+		for(int i = 0; i<AnimalsList.size();i++)
+		{
+			AnimalsList.get(i).Feed();
 		}
 	}
 
