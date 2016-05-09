@@ -14,15 +14,25 @@ public  class Animal
 	public String Conservation_status;
 	public String getCon(){return Conservation_status; }
 	public String dispCon(){
-		String str = " ";
-		if(this.Conservation_status.equals("LC"))str ="Least Concern";
-		if(this.Conservation_status.equals("NT"))str = "Near Threatened";
-		if(this.Conservation_status.equals("VU"))str = "Vulnerable";
-		if(this.Conservation_status.equals("EN"))str = "Endangered";
-		if(this.Conservation_status.equals("CR"))str = "Critically Endangered";
-		if(this.Conservation_status.equals("EW"))str = "Extinct In The Wild";
-		if(this.Conservation_status.equals("EX"))str = "Extinct";
-		if(this.Conservation_status.equals("DD"))str = "Data Deficient";
+		String str = "";
+		if(this.Conservation_status.equals("LC"))
+			str ="Least Concern";
+		else if(this.Conservation_status.equals("NT"))
+			str = "Near Threatened";
+		else if(this.Conservation_status.equals("VU"))
+			str = "Vulnerable";
+		else if(this.Conservation_status.equals("EN"))
+			str = "Endangered";
+		else if(this.Conservation_status.equals("CR"))
+			str = "Critically Endangered";
+		else if(this.Conservation_status.equals("EW"))
+			str = "Extinct In The Wild";
+		else if(this.Conservation_status.equals("EX"))
+			str = "Extinct";
+		else if(this.Conservation_status.equals("DD"))
+			str = "Data Deficient";
+		else
+			str = "";
 
 		return str;
 	}
