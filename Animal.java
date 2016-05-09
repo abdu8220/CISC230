@@ -5,7 +5,7 @@
  * @version		1.0
  * @since			4/26/16
  */
-public abstract class Animal
+public  class Animal
 {
 	public int Age;
 	public int getAge(){ return Age; }
@@ -109,7 +109,7 @@ public abstract class Animal
 	/**
 	 * Zoo keeper feeds the animal
 	 */
-	public abstract void Feed();
+	public void Feed(){}
 
 	/**
 	 * Move moves the animal to a new location on the zoo
