@@ -24,7 +24,13 @@ public class Employee {
 	@Override
 	public String toString(){
 		String temp = "Infomation for: ";
-		temp += getName() + " employee type: " + this.getClass().getName() + "\n";
+		temp += getName() + "\n";
+		temp += "Employee type: " + this.getClass().getName() + "\n";
+		temp += "ID number: " + getID() + "\n";
+		temp += "Hours per weeks: " + getHours() + "\n";
+		temp += "Phone Number: " + phone + "\n";
+		temp += "Salary: $" + getSal() + "\n";
+		temp += "SSN: " + getSSN() + "\n";
 		return temp;
 	}
 }
