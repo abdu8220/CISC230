@@ -4,6 +4,6 @@
  * @version		1.0
  * @since			5/4/16
  */
-public class AnimalHE extends Employee {
+public abstract class AnimalHE extends Employee {
 
 }

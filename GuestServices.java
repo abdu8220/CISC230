@@ -4,6 +4,6 @@
  * @version		1.0
  * @since			5/4/16
  */
-public class GuestServices extends Employee {
+public abstract class GuestServices extends Employee {
 
 }
