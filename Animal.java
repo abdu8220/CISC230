@@ -6,41 +6,52 @@
  * @since			4/26/16
  */
 public class Animal
-{	
+{
 	public int Age;
 	public int getAge(){ return Age; }
-	/**
-	 *I don't really know what this is
-	 */
+
+
 	public String Conservation_status;
 	public String getCon(){return Conservation_status; }
-	
+	public String dispCon(){
+		String str = " ";
+		if(this.Conservation_status.equals("LC"))str ="Least Concern";
+		if(this.Conservation_status.equals("NT"))str = "Near Threatened";
+		if(this.Conservation_status.equals("VU"))str = "Vulnerable";
+		if(this.Conservation_status.equals("EN"))str = "Endangered";
+		if(this.Conservation_status.equals("CR"))str = "Critically Endangered";
+		if(this.Conservation_status.equals("EW"))str = "Extinct In The Wild";
+		if(this.Conservation_status.equals("EX"))str = "Extinct";
+		if(this.Conservation_status.equals("DD"))str = "Data Deficient";
+
+		return str;
+	}
 	/**
 	 * A string to say what this animal eats
 	 */
 	public String Diet;
 	public String getDiet(){ return Diet; }
-	
+
 	/**
 	 * {@code true} for this animal can fly
 	 * {@code false} for this animal cannot fly
 	 */
 	public boolean Flight;
 	public boolean getFlight(){ return Flight; }
-	
+
 	/**
 	 * String for the place where the animal lives ex: {@code "Pacific Ocean"}
 	 */
 	public String Habit;
 	public String getHabit(){ return Habit; }
-	
+
 	/**
 	 * {@code true} for this animal is healthy
 	 * {@code false} for this animal is not healthy
 	 */
 	public boolean Healthy;
 	public boolean getHealth(){ return Healthy; }
-	
+
 	/**
 	 * String format for the date of the animal's last checkup {@code "MM/DD/YY"}
 	 */
@@ -58,7 +69,7 @@ public class Animal
 	 */
 	public String Location;
 	public String getLoc(){ return Location; }
-	
+
 	/**
 	 * String for the species name ex: {@code "cat"}
 	 */
@@ -68,13 +79,13 @@ public class Animal
 	/**
 	 * Weight in pounds
 	 */
-	public int Weight;
-	public int getWeight(){ return Weight; }
+	public double Weight;
+	public double getWeight(){ return Weight; }
 
 	/**
 	 * Animal class constructor
 	 */
-	public Animal(int Age, String Consevervation_status, String Diet, boolean Flight, String Habit, boolean healthy, String Last_Checkup,  int Lifespan, String Location, String Name, int Weight){
+	public Animal(int Age, String Consevervation_status, String Diet, boolean Flight, String Habit, boolean healthy, String Last_Checkup,  int Lifespan, String Location, String Name, double Weight){
 		this.Age = Age;
 		this.Conservation_status = Consevervation_status;
 		this.Diet = Diet;
@@ -111,7 +122,7 @@ public class Animal
 		Location = newLoc;
 		return getLoc();
 	}
-	
+
 	/**
 	 * @return A neat display of all the Animal object's information
 	 */
@@ -120,7 +131,7 @@ public class Animal
 		String temp = "Infomation for ";
 		temp += getName() + " of type: " + this.getClass().getName() + "\n";
 		temp += "Age in years: " + getAge() + "\n";
-		temp += "Conservation Satus" + getCon() + "\n";
+		temp += "Conservation Satus: " + getCon() + ", which traslates to: " + dispCon()+".\n";
 		temp += "Diet: " + getDiet() + "\n";
 		temp += "Can it fly? " + ((getFlight()) ? "Yes" : "no") + "\n";
 		temp += "Natural Habit: " + getHabit() + "\n";

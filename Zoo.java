@@ -22,8 +22,8 @@ public class Zoo {
 		// Animals attributes
 		String Name="",Consevervation_status="",Diet="",Habit="",Last_Checkup="",Location="";
 		boolean Flight=false, Healthy=false;
-		int Lifespan=0,Weight=0,flightSpeed=0,wingspan=0,Age=0,numOfArms=0,numOfLegs=0,swimSpeed=0,waterTemp=0,numOfFins=0;
-
+		int Lifespan=0,flightSpeed=0,wingspan=0,Age=0,numOfArms=0,numOfLegs=0,swimSpeed=0,waterTemp=0,numOfFins=0;
+		double Weight=0;
 		// Our Animal list declared and inizialized
 		ArrayList<Animal> AnimalsList = new ArrayList<Animal>();
 
@@ -33,7 +33,6 @@ public class Zoo {
 			record = scan.nextLine();
 			field = new StringTokenizer(record,",");
 			animalType = Integer.parseInt(field.nextToken());
-
 			Name= field.nextToken();
 			Age= Integer.parseInt(field.nextToken());
 			Consevervation_status= field.nextToken();
@@ -44,12 +43,12 @@ public class Zoo {
 			Last_Checkup= field.nextToken();
 			Lifespan= Integer.parseInt(field.nextToken());
 			Location= field.nextToken();
-			Weight= Integer.parseInt(field.nextToken());
-
+			Weight= Double.parseDouble(field.nextToken());
 				switch (animalType)
 				{
 
 					case 1:
+
 					numOfLegs = Integer.parseInt(field.nextToken());
 					AnimalsList.add(new Amphibian(Age, Consevervation_status, Diet, Flight,  Habit, Healthy, Last_Checkup, Lifespan, Location, Name, Weight, numOfLegs));
 					break;
@@ -63,6 +62,7 @@ public class Zoo {
 					break;
 
 					case 3:
+
 					numOfArms = Integer.parseInt(field.nextToken());
 					numOfLegs = Integer.parseInt(field.nextToken());
 

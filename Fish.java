@@ -21,13 +21,13 @@ public class Fish extends Animal
 	public int getWaterTemp(){return waterTemp;}
 
 
-	public Fish(int Age, String Consevervation_status, String Diet, boolean Flight, String Habit, boolean healthy, String Last_Checkup, int Lifespan, String Location, String Name, int Weight, int numOfFins, int swimSpeed, int waterTemp){
+	public Fish(int Age, String Consevervation_status, String Diet, boolean Flight, String Habit, boolean healthy, String Last_Checkup, int Lifespan, String Location, String Name, double Weight, int numOfFins, int swimSpeed, int waterTemp){
 			super(Age, Consevervation_status, Diet, Flight,  Habit, healthy, Last_Checkup, Lifespan, Location, Name, Weight);
 			this.numOfFins = numOfFins;
 			this.swimSpeed = swimSpeed;
 			this.waterTemp = waterTemp;
 	}
-	
+
 	@Override
 	public String toString(){
 			String info = super.toString();
