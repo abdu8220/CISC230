@@ -122,7 +122,9 @@ public  class Animal
 	/**
 	 * Zoo keeper feeds the animal
 	 */
-	public void Feed(){}
+	public String Feed(){
+		return getName() + " some yummy " + getDiet();
+	}
 
 	/**
 	 * Move moves the animal to a new location on the zoo
