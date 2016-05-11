@@ -12,8 +12,8 @@ public class Mammal extends Animal
 	public int getNumberOfArms() { return NumberOfArms; }
 	public int getNumberOfLegs() { return NumberOfLegs; }
 
-	public Mammal(int Age, String Consevervation_status, String Diet, boolean Flight, String Habit, boolean healthy, String Last_Checkup, int Lifespan, String Location, String Name, double Weight, int NumberOfArms, int NumberOfLegs){
-		super(Age, Consevervation_status, Diet, Flight,  Habit, healthy, Last_Checkup, Lifespan, Location, Name, Weight);
+	public Mammal(int Age, String Consevervation_status, String Diet,int Feeding_Schedule, boolean Flight, String Habit, boolean healthy, String Last_Checkup, int Lifespan, String Location, String Name, double Weight, int NumberOfArms, int NumberOfLegs){
+		super(Age, Consevervation_status, Diet,Feeding_Schedule, Flight,  Habit, healthy, Last_Checkup, Lifespan, Location, Name, Weight);
 		this.NumberOfArms = NumberOfArms;
 		this.NumberOfLegs = NumberOfLegs;
 	}
@@ -28,7 +28,7 @@ public class Mammal extends Animal
 	}
 		public void Feed(){
 
-		System.out.println(this.Name +" is fed " + this.Diet);
+		System.out.println(this.Name +" is fed " + this.Diet + " at "+ this.Feeding_Schedule +":00 A.M.");
 	}
 }
 

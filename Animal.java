@@ -42,6 +42,8 @@ public  class Animal
 	public String Diet;
 	public String getDiet(){ return Diet; }
 
+	public int Feeding_Schedule;
+	public int getFeeding_Schedule(){return Feeding_Schedule;}
 	/**
 	 * {@code true} for this animal can fly
 	 * {@code false} for this animal cannot fly
@@ -95,10 +97,11 @@ public  class Animal
 	/**
 	 * Animal class constructor
 	 */
-	public Animal(int Age, String Consevervation_status, String Diet, boolean Flight, String Habit, boolean healthy, String Last_Checkup,  int Lifespan, String Location, String Name, double Weight){
+	public Animal(int Age, String Consevervation_status, String Diet,int Feeding_Schedule, boolean Flight, String Habit, boolean healthy, String Last_Checkup,  int Lifespan, String Location, String Name, double Weight){
 		this.Age = Age;
 		this.Conservation_status = Consevervation_status;
 		this.Diet = Diet;
+		this.Feeding_Schedule = Feeding_Schedule;
 		this.Flight = Flight;
 		this.Habit = Habit;
 		this.Healthy = healthy;
@@ -148,6 +151,7 @@ public  class Animal
 		temp += "Average Lifespan in years: " + getLife() + "\n";
 		temp += "Location in Zoo: " + getLoc() + "\n";
 		temp += "Weight in pounds: " + getWeight() + "\n";
+
 		return temp;
 	}
 }

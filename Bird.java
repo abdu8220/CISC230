@@ -11,8 +11,8 @@ public class Bird extends Animal
 	public int getFlightSpeed(){ return flightSpeed; }
 	public int getWingspan(){ return wingspan; }
 
-	public Bird(int Age, String Consevervation_status, String Diet, boolean Flight, String Habit, boolean healthy, String Last_Checkup, int Lifespan, String Location, String Name, double Weight, int flightSpeed, int wingspan){
-		super(Age, Consevervation_status, Diet, Flight,  Habit, healthy, Last_Checkup, Lifespan, Location, Name, Weight);
+	public Bird(int Age, String Consevervation_status, String Diet,int Feeding_Schedule, boolean Flight, String Habit, boolean healthy, String Last_Checkup, int Lifespan, String Location, String Name, double Weight, int flightSpeed, int wingspan){
+		super(Age, Consevervation_status, Diet,Feeding_Schedule, Flight,  Habit, healthy, Last_Checkup, Lifespan, Location, Name, Weight);
 		this.flightSpeed = flightSpeed;
 		this.wingspan = wingspan;
 	}
@@ -26,7 +26,7 @@ public class Bird extends Animal
 	}
 
 	public void Feed(){
-		System.out.println(this.Name +" is fed " + this.Diet);
+		System.out.println(this.Name +" is fed " + this.Diet + " at " + this.Feeding_Schedule +":00 A.M.");
 	}
 
 }

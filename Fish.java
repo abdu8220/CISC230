@@ -21,8 +21,8 @@ public class Fish extends Animal
 	public int getWaterTemp(){return waterTemp;}
 
 
-	public Fish(int Age, String Consevervation_status, String Diet, boolean Flight, String Habit, boolean healthy, String Last_Checkup, int Lifespan, String Location, String Name, double Weight, int numOfFins, int swimSpeed, int waterTemp){
-			super(Age, Consevervation_status, Diet, Flight,  Habit, healthy, Last_Checkup, Lifespan, Location, Name, Weight);
+	public Fish(int Age, String Consevervation_status, String Diet, int Feeding_Schedule,boolean Flight, String Habit, boolean healthy, String Last_Checkup, int Lifespan, String Location, String Name, double Weight, int numOfFins, int swimSpeed, int waterTemp){
+			super(Age, Consevervation_status, Diet,Feeding_Schedule, Flight,  Habit, healthy, Last_Checkup, Lifespan, Location, Name, Weight);
 			this.numOfFins = numOfFins;
 			this.swimSpeed = swimSpeed;
 			this.waterTemp = waterTemp;
@@ -38,6 +38,6 @@ public class Fish extends Animal
 	}
 	public void Feed(){
 
-		System.out.println(this.Name +" is fed " + this.Diet);
+		System.out.println(this.Name +" is fed " + this.Diet + " at "+ this.Feeding_Schedule +":00 P.M.");
 	}
 }
