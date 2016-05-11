@@ -19,5 +19,9 @@ public class ZooKeeper extends AnimalCM {
 			return info;
 
 	}
+	public void feed(Animal animal){
+		System.out.println(this.name + " fed " + animal.Feed());
+		
+	}
 
 }
