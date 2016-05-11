@@ -16,7 +16,7 @@ public class Zoo {
 		String record = "";
 		StringTokenizer field;
 		File file = new File(fileName);
-		int animalType = 0, employeeType=0;
+		int animalType = 0;
 		Scanner scan = new Scanner(file);
 
 		// Our Animal list declared and inizialized
@@ -49,7 +49,7 @@ public class Zoo {
 			Lifespan= Integer.parseInt(field.nextToken());
 			Location= field.nextToken();
 			Weight= Double.parseDouble(field.nextToken());
-			System.out.println(Feeding_Schedule);
+
 				switch (animalType)
 				{
 
@@ -116,6 +116,8 @@ public class Zoo {
 
 		//Part2
 
+		// Our Emoloyee list declared and inizialized
+		ArrayList<Employee> EmployeeList = new ArrayList<Employee>();
 
 		fileName = "Employee.txt";
 		file = new File(fileName);
@@ -123,10 +125,90 @@ public class Zoo {
 
 		//Attributes for Employee:
 		String empAddress="",empName="",empPhone="",empSSN="";
-		int empHours=0,empID=0;
+		int empHours=0,empID=0,empType=0;
+		double empSalary=0;
 
+		while (scan.hasNext())
+		{
+			try{
+				record=scan.nextLine();
+				field = new StringTokenizer(record,",");
+				empType = Integer.parseInt(field.nextToken());
+				empAddress= field.nextToken();
+				empHours = Integer.parseInt(field.nextToken());
+				empID = Integer.parseInt(field.nextToken());
+				empName = field.nextToken();
+				empPhone = field.nextToken();
+				empSalary = Double.parseDouble(field.nextToken());
+				empSSN = field.nextToken();
 
+				switch (empType)
+					{
+						case 1:
 
+						EmployeeList.add(new ZooManager(empAddress,empHours,empID,empName,empPhone,empSalary,empSSN));
+						break;
+
+						case 2:
+
+						EmployeeList.add(new ZooKeeper(empAddress,empHours,empID,empName,empPhone,empSalary,empSSN));
+						break;
+
+						case 3:
+
+						EmployeeList.add(new Zoologist(empAddress,empHours,empID,empName,empPhone,empSalary,empSSN));
+						break;
+
+						case 4:
+
+						EmployeeList.add(new Vet(empAddress,empHours,empID,empName,empPhone,empSalary,empSSN));
+						break;
+
+						case 5:
+
+						EmployeeList.add(new VetTech(empAddress,empHours,empID,empName,empPhone,empSalary,empSSN));						break;
+
+						case 6:
+
+						EmployeeList.add(new GuestSerManager(empAddress,empHours,empID,empName,empPhone,empSalary,empSSN));
+						break;
+
+						case 7:
+
+						EmployeeList.add(new GuestSerEmp(empAddress,empHours,empID,empName,empPhone,empSalary,empSSN));
+						break;
+
+						case 8:
+
+						EmployeeList.add(new VolunteerManager(empAddress,empHours,empID,empName,empPhone,empSalary,empSSN));
+						break;
+
+						case 9:
+
+						EmployeeList.add(new Volunteer(empAddress,empHours,empID,empName,empPhone,empSalary,empSSN));
+						break;
+
+						default:
+						System.out.println("Default Case");
+
+					}//end switch
+
+				}//end try
+
+			catch (Exception e){
+					System.out.println("This is an exception! " + Name);
+					e.printStackTrace();
+				}//end catch
+
+		}//end while loop
+		scan.close();
+
+		// Printing toString of EmlpoyeeList
+		System.out.println("3* Information about current zoo's employees:");
+		for (int i = 0; i < EmployeeList.size(); i++)
+		{
+					System.out.println(EmployeeList.get(i));
+		}
 
 
 	}

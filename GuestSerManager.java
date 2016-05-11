@@ -4,10 +4,10 @@
  * @version		1.0
  * @since			5/4/16
  */
-public class VetTech extends AnimalHE {
+public class GuestSerManager extends GuestServices {
 
-
-public VetTech(String address, int hours, int ID, String name, String phone, double hourlypay, String SSN){
+	public GuestSerManager(String address, int hours, int ID, String name, String phone, double hourlypay, String SSN)
+	{
 		super(address,hours,ID,name,phone,hourlypay,SSN);
 
 	}

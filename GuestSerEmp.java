@@ -6,4 +6,18 @@
  */
 public class GuestSerEmp extends GuestServices {
 
+	public GuestSerEmp(String address, int hours, int ID, String name, String phone, double hourlypay, String SSN)
+	{
+			super(address,hours,ID,name,phone,hourlypay,SSN);
+
+	}
+
+	public String toString()
+	{
+		String info = super.toString();
+
+		return info;
+
+	}
+
 }
