@@ -5,17 +5,15 @@
  * @since			5/4/16
  */
 public class Vet extends AnimalHE {
-public Vet(String address, int hours, int ID, String name, String phone, double hourlypay, String SSN)
-	{
+public Vet(String address, int hours, int ID, String name, String phone, double hourlypay, String SSN){
 		super(address,hours,ID,name,phone,hourlypay,SSN);
-
 	}
 
-	public String toString()
-	{
+	//Some method needs to go here, check later
+
+	@Override
+	public String toString(){
 		String info = super.toString();
-
 		return info;
-
 	}
 }
