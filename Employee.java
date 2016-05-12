@@ -80,7 +80,8 @@ public class Employee {
 		this.SSN = SSN;
 	}
 
-	public double pay(){
+	public String pay(){
+		//TODO work on this
 		return hourlyPay * hours;
 	}
 
