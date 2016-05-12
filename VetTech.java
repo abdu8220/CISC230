@@ -9,14 +9,14 @@ public class VetTech extends AnimalHE {
 
 public VetTech(String address, int hours, int ID, String name, String phone, double hourlypay, String SSN){
 		super(address,hours,ID,name,phone,hourlypay,SSN);
-
 	}
+	
+	//Some method needs to go here, check later
 
+	@Override
 	public String toString()
 	{
 		String info = super.toString();
-
 		return info;
-
 	}
 }
