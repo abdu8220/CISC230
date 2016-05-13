@@ -1,4 +1,3 @@
-
 /**
  * This is the class to be extended
  * @author		Johnathan Marin-Romero
@@ -7,35 +6,15 @@
  */
 public  class Animal
 {
+	/**
+	 * Age in years
+	 */
 	public int Age;
 	public int getAge(){ return Age; }
-
-
+	
 	public String Conservation_status;
-	public String getCon(){return Conservation_status; }
-	public String dispCon(){
-		String str = "";
-		if(this.Conservation_status.equals("LC"))
-			str ="Least Concern";
-		else if(this.Conservation_status.equals("NT"))
-			str = "Near Threatened";
-		else if(this.Conservation_status.equals("VU"))
-			str = "Vulnerable";
-		else if(this.Conservation_status.equals("EN"))
-			str = "Endangered";
-		else if(this.Conservation_status.equals("CR"))
-			str = "Critically Endangered";
-		else if(this.Conservation_status.equals("EW"))
-			str = "Extinct In The Wild";
-		else if(this.Conservation_status.equals("EX"))
-			str = "Extinct";
-		else if(this.Conservation_status.equals("DD"))
-			str = "Data Deficient";
-		else
-			str = "";
-
-		return str;
-	}
+	public String getCon(){ return Conservation_status; }
+	
 	/**
 	 * A string to say what this animal eats
 	 */
@@ -135,7 +114,32 @@ public  class Animal
 		Location = newLoc;
 		return getLoc();
 	}
-
+	/**
+	 * @return full conservation status
+	 */
+	public String dispCon(){
+		switch(getCon()){
+			case "LC":
+				return "Least Concern"; 
+			case "NT":
+				return "Near Threatened"; 
+			case "VU":
+				return "Vulnerable";
+			case "EN":
+				return "Endangered";
+			case "CR":
+				return "Critically Endangered";
+			case "EW":
+				return "Extinct In The Wild";
+			case "EX":
+				return "Extinct";
+			case "DD":
+				return "Data Deficient";
+			default:
+				return "";
+		}
+	}
+	
 	/**
 	 * @return A neat display of all the Animal object's information
 	 */
@@ -153,7 +157,6 @@ public  class Animal
 		temp += "Average Lifespan in years: " + getLife() + "\n";
 		temp += "Location in Zoo: " + getLoc() + "\n";
 		temp += "Weight in pounds: " + getWeight() + "\n";
-
 		return temp;
 	}
 }

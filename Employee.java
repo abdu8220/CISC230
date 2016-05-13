@@ -19,55 +19,32 @@ public class Employee {
 	public int 		getID()			{ return ID;}
 	public String	getName()		{ return name; }
 	public String	getPhone()	{ return phone; }
-	public double	getPayratel()		{ return hourlyPay; }
+	public double	getPayratel()	{ return hourlyPay; }
 	public String	getSSN()		{ return SSN; }
 
-	public String getJobTitle()
-	{
-		String str="";
-
-		switch(this.getClass().getName())
-		{
-
+	public String getJobTitle(){
+		switch(getClass().getName()){
 		case "ZooManager":
-		str = "The Zoo Manager";
-		break;
-
+			return "The Zoo Manager";
 		case "ZooKeeper":
-		str = "Zoo Keeper";
-		break;
-
+			return "Zoo Keeper";
 		case "Zoologist":
-		str = "Zoologist";
-		break;
-
+			return"Zoologist";
 		case "Vet":
-		str = "Veterinarian";
-		break;
-
+			return "Veterinarian";
 		case "VetTech":
-		str = "Vet Tech";
-		break;
-
+			return "Vet Tech";
 		case "GuestSerManager":
-		str = "Guest Service Manager";
-		break;
-
+			return "Guest Service Manager";
 		case "GuestSerEmp":
-		str = "Guest Service Employee";
-		break;
-
+			return "Guest Service Employee";
 		case "VolunteerManager":
-		str = "Volunteer Manager";
-		break;
-
+			return "Volunteer Manager";
 		case "Volunteer":
-		str = "Volunteer";
-		break;
-
+			return "Volunteer";
+		default:
+			return "";
 		}
-
-		return str;
 	}
 
 	public Employee(String address, int hours, int ID, String name, String phone, double hourlypay, String SSN){
@@ -81,15 +58,14 @@ public class Employee {
 	}
 
 	public String pay(){
-		//TODO work on this
-		return hourlyPay * hours;
+		return getName() + " was paid: $" + (hourlyPay * hours);
 	}
 
 	@Override
 	public String toString(){
 		String temp = "Infomation for:\n";
 		temp += "Employee name:" + getName() + ".\n";
-		temp += "Job Title: " + this.getJobTitle()+".\n";
+		temp += "Job Title: " + getJobTitle()+".\n";
 		temp += "ID number: " + getID() + "\n";
 		temp += "Hours per weeks: " + getHours() + "\n";
 		temp += "Salary: $" + getPayratel() + "\n";
