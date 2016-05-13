@@ -26,20 +26,8 @@ public class Zoo {
 		try { scan = new Scanner(file); } catch (FileNotFoundException e) { e.printStackTrace(); }
 		
 		try { animalFileHandle(); } catch (IOException e) {e.printStackTrace(); }
-		//Part2
-		// Printing toString of AnimalsList
-		System.out.println("1* Information about current zoo's animals:");
-		for ( Animal a : AnimalsList ) {
-			System.out.println(a);
-		}
 		
 		try { employeeFileHandle(); } catch (IOException e) { e.printStackTrace(); }
-		
-		// Printing toString of EmlpoyeeList
-		System.out.println("3* Information about current zoo's employees:");
-		for ( Employee e : EmployeeList ){
-					System.out.println(e);
-		}
 		
 		// Feeding the zoo's animals
 		System.out.print("2*Feeding all of the zoo's animals:\n..................................\n");
@@ -103,6 +91,12 @@ public class Zoo {
 			}//end switch
 		}//end Animal while loop
 		scan.close();
+		//Part2
+		// Printing toString of AnimalsList
+		System.out.println("1* Information about current zoo's animals:");
+		for ( Animal a : AnimalsList ) {
+			System.out.println(a);
+		}
 	}
 	
 	public static void employeeFileHandle() throws IOException{
@@ -149,7 +143,12 @@ public class Zoo {
 				default:
 					System.out.println("Default Case");
 			}//end switch
-		}//end while loop
+		}//end employee while loop
 		scan.close();
+		// Printing toString of EmlpoyeeList
+		System.out.println("3* Information about current zoo's employees:");
+		for ( Employee e : EmployeeList ){
+			System.out.println(e);
+		}
 	}
 }
