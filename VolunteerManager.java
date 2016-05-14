@@ -6,10 +6,19 @@
  */
 public class VolunteerManager extends GuestServices {
 
-	public VolunteerManager(String address, int hours, int ID, String name, String phone, double hourlypay, String SSN)
+	public int numOfVolunteers;
+	public int getNumOfVolunteers(){return numOfVolunteers;}
+
+	public VolunteerManager(String address, int hours, int ID, String name, String phone, double hourlypay, String SSN, int numOfVolunteers)
 	{
 		super(address,hours,ID,name,phone,hourlypay,SSN);
+		this.numOfVolunteers = numOfVolunteers;
 
+	}
+
+	public void work (Employee GMEmp, String instruction, int Hours)
+	{
+		System.out.println( this.name + " assigns " + GMEmp.getName() + " to " + instruction + " for the next " + Hours + " hours.");
 	}
 
 	public String toString()
@@ -19,5 +28,6 @@ public class VolunteerManager extends GuestServices {
 		return info;
 
 	}
+
 
 }

@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 /**
  * This is the class to be extended
  * @author		Johnathan Marin-Romero
@@ -10,7 +11,6 @@ public abstract class AnimalCM extends Employee {
 
 			super(address,hours,ID,name,phone,hourlypay,SSN);
 }
-
 
 
 }

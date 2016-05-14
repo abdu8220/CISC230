@@ -18,32 +18,100 @@ public class Zoo {
 	static Scanner scan;
 	static ArrayList<Animal> AnimalsList = new ArrayList<Animal>();
 	static ArrayList<Employee> EmployeeList = new ArrayList<Employee>();
-	
-	public static void main(String[] args){
-		fileName = "src/Animal.txt";
-		file = new File(fileName);
-		
-		try { scan = new Scanner(file); } catch (FileNotFoundException e) { e.printStackTrace(); }
-		
-		try { animalFileHandle(); } catch (IOException e) {e.printStackTrace(); }
-		
-		try { employeeFileHandle(); } catch (IOException e) { e.printStackTrace(); }
-		
-		// Feeding the zoo's animals
-		System.out.print("2*Feeding all of the zoo's animals:\n..................................\n");
 
-		for( Animal a : AnimalsList ){
-			a.Feed();
+	public static void main(String[] args){
+		fileName = "Animal.txt";
+		file = new File(fileName);
+
+		try { scan = new Scanner(file); } catch (FileNotFoundException e) { e.printStackTrace(); }
+
+		try { animalFileHandle(); } catch (IOException e) {e.printStackTrace(); }
+
+		try { employeeFileHandle(); } catch (IOException e) { e.printStackTrace(); }
+
+		//**Part1**//
+
+		//a-Printing toString of AnimalsList
+		System.out.println("***WELCOME to Minnestoa Zoo's Java-Implementation***");
+		System.out.print("1* Information about current zoo's animals:\n..................................\n");
+		for ( Animal a : AnimalsList ) {
+		System.out.println(a);
 		}
+		//b-Feeding the zoo's animals
+		System.out.print("2*Feeding all of the zoo's animals:\n..................................\n");
+		for( Animal animal : AnimalsList ){
+			animal.Feed();
+		}
+		// **End Part1** //
+
+		//**Part2**//
+
+		//a-Printing toString of EmlpoyeeList
+
+		System.out.print("\n3* Information about current zoo's employees:\n..................................\n");
+		for ( Employee e : EmployeeList ){
+					System.out.println(e);
+		}
+
+		//b-Paying the Employees
+		System.out.print("4* Paying the employees :\n..................................\n");
+		for ( Employee e : EmployeeList ){
+			System.out.println(e.pay());
+		}
+		// **End Part2**//
+
+		//**Part 3**//
+
+		//a-Asking the zoo keeper to feed the animals
+		System.out.print("\n5* Zoo Keeper feed the animals:\n..................................\n");
+		EmployeeList.get(1).feedTheAnimals(AnimalsList);
+
+
+		//b-Zoo Manager pays all the employees
+		System.out.print("\n6* Zoo Manager pays the employees:\n..................................\n");
+		EmployeeList.get(0).pay(EmployeeList);
+
+		//c-Guest Service manager assign duties to his employees
+		System.out.print("\n7* Guest Service manager assign duties to his employees:\n..................................\n");
+
+		EmployeeList.get(6).work(EmployeeList.get(7),"work in the gift shop",4);
+		EmployeeList.get(6).work(EmployeeList.get(8),"sell tickets at desk#2",8);
+		EmployeeList.get(6).work(EmployeeList.get(9),"distribute zoo's brochures in the parking area",2);
+
+		//d- Volunteer manager schedule volunteers for work hours
+		System.out.print("\n8* Volunteer manager assign duties to the volunteers:\n..................................\n");
+		EmployeeList.get(10).work(EmployeeList.get(11),"interpret artifacts along the Tropicals trail",5);
+		EmployeeList.get(10).work(EmployeeList.get(12),"assist guest seating in the cow milking parlor",2);
+		EmployeeList.get(10).work(EmployeeList.get(13),"handle data input for the Education Department",3);
+		EmployeeList.get(10).work(EmployeeList.get(14),"replenish merchandise on the gift store shelves",2);
+
+		//e- The Zoologist develop enrichments for the zoo's animals
+		System.out.print("\n9* The Zoologist developing enrichments for the zoo's animals:\n..................................\n");
+
+		/*
+			Implementation here, please
+		*/
+
+		//f- Veterinarian give phyiscal exam for the zoo's animals
+		System.out.print("\n10* Volunteer manager assign duties to the volunteers:\n..................................\n");
+
+		/*
+			Implementation here, please
+		*/
+
+
+		//**End Part3**//
+
 	}
-	
+
+
 	public static void animalFileHandle() throws IOException{
 		// Animals attributes
 		String Name = "", Consevervation_status = "", Diet="", Habit = "", Last_Checkup = "", Location = "";
 		boolean Flight = false, Healthy = false;
 		int Lifespan = 0, flightSpeed = 0, wingspan = 0, Age = 0, numOfArms = 0, numOfLegs = 0, swimSpeed = 0, waterTemp = 0, numOfFins = 0, Feeding_Schedule = 0, animalType = 0;
 		double Weight = 0;
-		
+
 		while (scan.hasNext()){//Animal file management
 			record = scan.nextLine();
 			field = new StringTokenizer(record,",");
@@ -85,28 +153,24 @@ public class Zoo {
 					waterTemp = Integer.parseInt(field.nextToken());
 					AnimalsList.add(new Fish(Age, Consevervation_status, Diet,Feeding_Schedule, Flight,  Habit, Healthy, Last_Checkup, Lifespan, Location, Name, Weight, numOfFins,swimSpeed,waterTemp));
 					break;
-							
+
 				default:
 					System.out.println("Default Case");
 			}//end switch
 		}//end Animal while loop
 		scan.close();
-		//Part2
-		// Printing toString of AnimalsList
-		System.out.println("1* Information about current zoo's animals:");
-		for ( Animal a : AnimalsList ) {
-			System.out.println(a);
+
 		}
-	}
-	
+
+
 	public static void employeeFileHandle() throws IOException{
-		fileName = "src/Employee.txt";
+		fileName = "Employee.txt";
 		file = new File(fileName);
 		try { scan = new Scanner(file); } catch (FileNotFoundException e) { e.printStackTrace(); }
 
 		//Attributes for Employee:
-		String empAddress = "", empName = "", empPhone = "", empSSN = "";
-		int empHours = 0, empID = 0, empType = 0;
+		String empAddress = "", empName = "", empPhone = "", empSSN = "", volPeriod ="";
+		int empHours = 0, empID = 0, empType = 0, numOfEmp=0, numOfAnimals=0, numOfVolunteers=0;
 		double empSalary = 0;
 
 		while (scan.hasNext()){
@@ -123,9 +187,11 @@ public class Zoo {
 
 			switch (empType){
 				case 1:
-					EmployeeList.add(new ZooManager(empAddress,empHours,empID,empName,empPhone,empSalary,empSSN)); break;
+					numOfEmp = Integer.parseInt(field.nextToken());
+					EmployeeList.add(new ZooManager(empAddress,empHours,empID,empName,empPhone,empSalary,empSSN,numOfEmp)); break;
 				case 2:
-					EmployeeList.add(new ZooKeeper(empAddress,empHours,empID,empName,empPhone,empSalary,empSSN)); break;
+					numOfAnimals = Integer.parseInt(field.nextToken());
+					EmployeeList.add(new ZooKeeper(empAddress,empHours,empID,empName,empPhone,empSalary,empSSN,numOfAnimals)); break;
 				case 3:
 					EmployeeList.add(new Zoologist(empAddress,empHours,empID,empName,empPhone,empSalary,empSSN)); break;
 				case 4:
@@ -137,18 +203,15 @@ public class Zoo {
 				case 7:
 					EmployeeList.add(new GuestSerEmp(empAddress,empHours,empID,empName,empPhone,empSalary,empSSN)); break;
 				case 8:
-					EmployeeList.add(new VolunteerManager(empAddress,empHours,empID,empName,empPhone,empSalary,empSSN)); break;
+					numOfVolunteers = Integer.parseInt(field.nextToken());
+					EmployeeList.add(new VolunteerManager(empAddress,empHours,empID,empName,empPhone,empSalary,empSSN,numOfVolunteers)); break;
 				case 9:
-					EmployeeList.add(new Volunteer(empAddress,empHours,empID,empName,empPhone,empSalary,empSSN)); break;
+					volPeriod = field.nextToken();
+					EmployeeList.add(new Volunteer(empAddress,empHours,empID,empName,empPhone,empSalary,empSSN,volPeriod)); break;
 				default:
 					System.out.println("Default Case");
 			}//end switch
 		}//end employee while loop
 		scan.close();
-		// Printing toString of EmlpoyeeList
-		System.out.println("3* Information about current zoo's employees:");
-		for ( Employee e : EmployeeList ){
-			System.out.println(e);
-		}
 	}
 }

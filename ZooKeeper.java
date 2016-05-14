@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 /**
  * This is the class to be extended
  * @author		Johnathan Marin-Romero
@@ -6,22 +8,29 @@
  */
 public class ZooKeeper extends AnimalCM {
 
-	public ZooKeeper(String address, int hours, int ID, String name, String phone, double hourlypay, String SSN)
+public int numOfAnimals;
+public int getNumOfAnimals(){return numOfAnimals;}
+
+	public ZooKeeper(String address, int hours, int ID, String name, String phone, double hourlypay, String SSN, int numOfAnimals)
 		{
 			super(address,hours,ID,name,phone,hourlypay,SSN);
+			this.numOfAnimals = numOfAnimals;
 
 		}
 
 		public String toString()
 		{
 			String info = super.toString();
+			info += "Number of the zoo's animals: " + numOfAnimals + "animals.\n";
 
 			return info;
 
 	}
-	public void feed(ArrayList<Animal> animal){
+	public void feedTheAnimals(ArrayList<Animal> animal)
+	{
 		for(Animal a : animal){
-			System.out.println(this.name + " fed " ); a.Feed();
-		}
 
+			System.out.print(this.name + " fed " ); a.feed();
+		}
+	}
 }

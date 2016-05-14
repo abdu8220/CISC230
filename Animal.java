@@ -11,10 +11,10 @@ public  class Animal
 	 */
 	public int Age;
 	public int getAge(){ return Age; }
-	
+
 	public String Conservation_status;
 	public String getCon(){ return Conservation_status; }
-	
+
 	/**
 	 * A string to say what this animal eats
 	 */
@@ -101,9 +101,11 @@ public  class Animal
 	/**
 	 * Zoo keeper feeds the animal
 	 */
-	public String Feed(){
-		return getName() + " some yummy " + getDiet();
+
+	public void feed(){
+		System.out.println( getName() + " some yummy " + getDiet());
 	}
+	public void Feed(){}
 
 	/**
 	 * Move moves the animal to a new location on the zoo
@@ -120,9 +122,9 @@ public  class Animal
 	public String dispCon(){
 		switch(getCon()){
 			case "LC":
-				return "Least Concern"; 
+				return "Least Concern";
 			case "NT":
-				return "Near Threatened"; 
+				return "Near Threatened";
 			case "VU":
 				return "Vulnerable";
 			case "EN":
@@ -139,7 +141,7 @@ public  class Animal
 				return "";
 		}
 	}
-	
+
 	/**
 	 * @return A neat display of all the Animal object's information
 	 */

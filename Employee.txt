@@ -1,15 +1,15 @@
-1,4890 Clear Round Bruce Minnesota 56282 US,20,1,Al Cady,(651)222-9629,29,123-45-6789
-2,9711 Jagged Extension Rush Point Minnesota 55194 US,20,2,Paul Jaeb,(320)010-2344,28,234-56-7891
-3,9788 Foggy Treasure Pathway Roseville Minnesota 56002 US,20,3,Aimee Johnson,(320)307-0923,28,345-67-8912
-4,7448 Round Rabbit Woods Varco Minnesota 55905 US,20,4,Michael Jackson,(320)411-7860,26,456-78-9123
-5,9771 High Diversion Alvarado Minnesota 55010 US,20,5,Lebron James,(651)255-0129,22,567-89-1234
-5,5157 Cotton Bear Farms Walters Minnesota 56745 US,20,6,Bakr Albakri,(952)398-9345,22,678-91-2345
-6,4464 Emerald Deer Corner Rushmore Minnesota 55185 US,20,7,Jonathon Marin-Romero,(612)935-3727,14,789-12-3456
-7,8644 Lazy Timber Court Danesville Minnesota 56473 US,20,8,Michael Jordan,(612)775-6173,14,891-23-4567
-7,3517 Sunny Landing Saginaw Minnesota 56109 US,20,9,Jackson five,(507)348-2303,14,912-34-5678
-7,685 Heather Fox Abbey Salo Corner Minnesota 55048 US,20,10,Beyonce Knowles,(320)252-5231,12,112-23-3445
-8,9914 Middle Autumn Alley Maple Grove Minnesota 56188 US,20,11,Tyler Lehmann,(507)111-9833,13,566-77-8899
-9,5993 Hazy Common Arlington Minnesota 55403 US,20,12,Murad Abduselam,(320)277-1852,0,123-45-4321
-9,3909 Colonial Log Drive Lake Lillian Minnesota 56202 US,20,13,Leonel Messi,(612)578-6418,0,012-34-3210
-9,9094 Tawny Valley Sturgeon Lake Minnesota 55361 US,20,14,Christiano Ronaldo,(218)801-0228,0,012-34-5678
-9,6035 Sleepy Manor Minnesota Lake Minnesota 55627 US,20,15,Kobe Bryant,(612)798-9390,0,567-89-1012
+1,4890 Clear Round Bruce Minnesota 56282 US,40,1,Al Cady,(651)222-9629,31,123-45-6789,15
+2,9711 Jagged Extension Rush Point Minnesota 55194 US,40,2,Paul Jaeb,(320)010-2344,28,234-56-7891,20
+3,9788 Foggy Treasure Pathway Roseville Minnesota 56002 US,40,3,Aimee Johnson,(320)307-0923,28,345-67-8912
+4,7448 Round Rabbit Woods Varco Minnesota 55905 US,40,4,Michael Jackson,(320)411-7860,26,456-78-9123
+5,9771 High Diversion Alvarado Minnesota 55010 US,35,5,Lebron James,(651)255-0129,22,567-89-1234
+5,5157 Cotton Bear Farms Walters Minnesota 56745 US,40,6,Bakr Albakri,(952)398-9345,22,678-91-2345
+6,4464 Emerald Deer Corner Rushmore Minnesota 55185 US,40,7,Jonathon Marin-Romero,(612)935-3727,14,789-12-3456
+7,8644 Lazy Timber Court Danesville Minnesota 56473 US,40,8,Michael Jordan,(612)775-6173,14,891-23-4567
+7,3517 Sunny Landing Saginaw Minnesota 56109 US,40,9,Jackson five,(507)348-2303,14,912-34-5678
+7,685 Heather Fox Abbey Salo Corner Minnesota 55048 US,40,10,Beyonce Knowles,(320)252-5231,12,112-23-3445
+8,9914 Middle Autumn Alley Maple Grove Minnesota 56188 US,33,11,Tyler Lehmann,(507)111-9833,28,566-77-8899,4
+9,5993 Hazy Common Arlington Minnesota 55403 US,20,12,Murad Abduselam,(320)277-1852,0,123-45-4321,3 monthes
+9,3909 Colonial Log Drive Lake Lillian Minnesota 56202 US,20,13,Leonel Messi,(612)578-6418,0,012-34-3210,1 year
+9,9094 Tawny Valley Sturgeon Lake Minnesota 55361 US,20,14,Christiano Ronaldo,(218)801-0228,0,012-34-5678,9 monthes
+9,6035 Sleepy Manor Minnesota Lake Minnesota 55627 US,20,15,Kobe Bryant,(612)798-9390,0,567-89-1012,2 monthes

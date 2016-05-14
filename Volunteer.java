@@ -6,20 +6,26 @@
  */
 public class Volunteer extends GuestServices {
 
-	public Volunteer(String address, int hours, int ID, String name, String phone, double hourlypay, String SSN)
+
+public String volPeriod;
+public String getVolPeriod(){return volPeriod;}
+
+	public Volunteer(String address, int hours, int ID, String name, String phone, double hourlypay, String SSN, String volPeriod)
 	{
 		super(address,hours,ID,name,phone,hourlypay,SSN);
+		this.volPeriod = volPeriod;
 	}
 
 	@Override
 	public String pay(){
-		//TODO work on this
+		return "Dear " + this.getName()+ ",volunteers don't get paid. Thanks for your services.";
 	}
 
 	@Override
 	public String toString()
 	{
 		String info = super.toString();
+		info += "Volunteering Period: " + volPeriod + ".\n";
 		return info;
 	}
 }

@@ -19,4 +19,11 @@ public class GuestSerManager extends GuestServices {
 		return info;
 
 	}
+
+	// String instructions = The duty assigned to GuestSerEmp
+	// int = number of hours
+	public void work (Employee GMEmp, String instruction, int Hours)
+	{
+		System.out.println( this.name + " assigns " + GMEmp.getName() + " to " + instruction + " for the next " + Hours + " hours.");
+	}
 }
