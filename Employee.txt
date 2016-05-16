@@ -1,5 +1,5 @@
-1,4890 Clear Round Bruce Minnesota 56282 US,40,1,Al Cady,(651)222-9629,31,123-45-6789,15
-2,9711 Jagged Extension Rush Point Minnesota 55194 US,40,2,Paul Jaeb,(320)010-2344,28,234-56-7891,20
+1,4890 Clear Round Bruce Minnesota 56282 US,40,1,Al Cady,(651)222-9629,31,123-45-6789
+2,9711 Jagged Extension Rush Point Minnesota 55194 US,40,2,Paul Jaeb,(320)010-2344,28,234-56-7891
 3,9788 Foggy Treasure Pathway Roseville Minnesota 56002 US,40,3,Aimee Johnson,(320)307-0923,28,345-67-8912
 4,7448 Round Rabbit Woods Varco Minnesota 55905 US,40,4,Michael Jackson,(320)411-7860,26,456-78-9123
 5,9771 High Diversion Alvarado Minnesota 55010 US,35,5,Lebron James,(651)255-0129,22,567-89-1234
