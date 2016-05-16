@@ -11,26 +11,22 @@ public class ZooKeeper extends AnimalCM {
 public int numOfAnimals;
 public int getNumOfAnimals(){return numOfAnimals;}
 
-	public ZooKeeper(String address, int hours, int ID, String name, String phone, double hourlypay, String SSN, int numOfAnimals)
-		{
-			super(address,hours,ID,name,phone,hourlypay,SSN);
-			this.numOfAnimals = numOfAnimals;
-
-		}
-
-		public String toString()
-		{
-			String info = super.toString();
-			info += "Number of the zoo's animals: " + numOfAnimals + "animals.\n";
-
-			return info;
-
+	public ZooKeeper(String address, int hours, int ID, String name, String phone, double hourlypay, String SSN, int numOfAnimals){
+		super(address,hours,ID,name,phone,hourlypay,SSN);
+		this.numOfAnimals = numOfAnimals;
 	}
+		
 	public void feedTheAnimals(ArrayList<Animal> animal)
 	{
 		for(Animal a : animal){
-
 			System.out.print(this.name + " fed " ); a.feed();
 		}
+	}
+	
+	@Override
+	public String toString(){
+		String info = super.toString();
+		info += "Number of the zoo's animals: " + numOfAnimals + "animals.\n";
+		return info;
 	}
 }

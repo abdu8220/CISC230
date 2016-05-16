@@ -20,7 +20,7 @@ public class Zoo {
 	static ArrayList<Employee> EmployeeList = new ArrayList<Employee>();
 
 	public static void main(String[] args){
-		fileName = "Animal.txt";
+		fileName = "src/Animal.txt";
 		file = new File(fileName);
 
 		try { scan = new Scanner(file); } catch (FileNotFoundException e) { e.printStackTrace(); }
@@ -35,7 +35,7 @@ public class Zoo {
 		System.out.println("***WELCOME to Minnestoa Zoo's Java-Implementation***");
 		System.out.print("1* Information about current zoo's animals:\n..................................\n");
 		for ( Animal a : AnimalsList ) {
-		System.out.println(a);
+			System.out.println(a);
 		}
 		//b-Feeding the zoo's animals
 		System.out.print("2*Feeding all of the zoo's animals:\n..................................\n");
@@ -64,26 +64,26 @@ public class Zoo {
 
 		//a-Asking the zoo keeper to feed the animals
 		System.out.print("\n5* Zoo Keeper feed the animals:\n..................................\n");
-		EmployeeList.get(1).feedTheAnimals(AnimalsList);
+		((ZooKeeper) EmployeeList.get(1)).feedTheAnimals(AnimalsList);
 
 
 		//b-Zoo Manager pays all the employees
 		System.out.print("\n6* Zoo Manager pays the employees:\n..................................\n");
-		EmployeeList.get(0).pay(EmployeeList);
+		((ZooManager) EmployeeList.get(0)).payEmployees(EmployeeList);
 
 		//c-Guest Service manager assign duties to his employees
 		System.out.print("\n7* Guest Service manager assign duties to his employees:\n..................................\n");
 
-		EmployeeList.get(6).work(EmployeeList.get(7),"work in the gift shop",4);
-		EmployeeList.get(6).work(EmployeeList.get(8),"sell tickets at desk#2",8);
-		EmployeeList.get(6).work(EmployeeList.get(9),"distribute zoo's brochures in the parking area",2);
+		((GuestSerManager) EmployeeList.get(6)).work(EmployeeList.get(7),"work in the gift shop",4);
+		((GuestSerManager) EmployeeList.get(6)).work(EmployeeList.get(8),"sell tickets at desk#2",8);
+		((GuestSerManager) EmployeeList.get(6)).work(EmployeeList.get(9),"distribute zoo's brochures in the parking area",2);
 
 		//d- Volunteer manager schedule volunteers for work hours
 		System.out.print("\n8* Volunteer manager assign duties to the volunteers:\n..................................\n");
-		EmployeeList.get(10).work(EmployeeList.get(11),"interpret artifacts along the Tropicals trail",5);
-		EmployeeList.get(10).work(EmployeeList.get(12),"assist guest seating in the cow milking parlor",2);
-		EmployeeList.get(10).work(EmployeeList.get(13),"handle data input for the Education Department",3);
-		EmployeeList.get(10).work(EmployeeList.get(14),"replenish merchandise on the gift store shelves",2);
+		((VolunteerManager) EmployeeList.get(10)).work(EmployeeList.get(11),"interpret artifacts along the Tropicals trail",5);
+		((VolunteerManager) EmployeeList.get(10)).work(EmployeeList.get(12),"assist guest seating in the cow milking parlor",2);
+		((VolunteerManager) EmployeeList.get(10)).work(EmployeeList.get(13),"handle data input for the Education Department",3);
+		((VolunteerManager) EmployeeList.get(10)).work(EmployeeList.get(14),"replenish merchandise on the gift store shelves",2);
 
 		//e- The Zoologist develop enrichments for the zoo's animals
 		System.out.print("\n9* The Zoologist developing enrichments for the zoo's animals:\n..................................\n");
@@ -164,7 +164,7 @@ public class Zoo {
 
 
 	public static void employeeFileHandle() throws IOException{
-		fileName = "Employee.txt";
+		fileName = "src/Employee.txt";
 		file = new File(fileName);
 		try { scan = new Scanner(file); } catch (FileNotFoundException e) { e.printStackTrace(); }
 

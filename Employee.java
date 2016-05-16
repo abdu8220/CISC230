@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 /**
  * This is the class to be extended
  * @author		Johnathan Marin-Romero
@@ -62,9 +61,6 @@ public class Employee {
 		return getName() + " was paid: $" + (hourlyPay * hours);
 	}
 
-	public void pay(ArrayList<Employee> employee){
-	}
-
 	@Override
 	public String toString(){
 		String temp = "Infomation for:\n";
@@ -78,7 +74,4 @@ public class Employee {
 		temp += "SSN: " + getSSN() + "\n";
 		return temp;
 	}
-	public void work(Employee theLucky1, String ins, int h){}
-	public void feedTheAnimals(ArrayList<Animal> animals){}
-
 }
