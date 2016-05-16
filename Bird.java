@@ -24,10 +24,5 @@ public class Bird extends Animal
 		info += "Wingspan: " + getWingspan() + " inch.\n";
 		return info;
 	}
-
-	public void Feed(){
-		System.out.println(this.Name +" is fed " + this.Diet + " at " + this.Feeding_Schedule +":00 A.M.");
-	}
-
 }
 
