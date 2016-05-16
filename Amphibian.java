@@ -24,10 +24,5 @@ public class Amphibian extends Animal
 			info += "Number of Legs:" + getNumberOfLegs() + ".\n";
 			return info;
 	}
-
-
-	public void Feed(){
-			System.out.println(this.Name +" is fed " + this.Diet + " at " + this.Feeding_Schedule +":00 P.M.");
-	}
 }
 
