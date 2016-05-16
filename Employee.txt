@@ -9,7 +9,7 @@
 7,3517 Sunny Landing Saginaw Minnesota 56109 US,40,9,Jackson five,(507)348-2303,14,912-34-5678
 7,685 Heather Fox Abbey Salo Corner Minnesota 55048 US,40,10,Beyonce Knowles,(320)252-5231,12,112-23-3445
 8,9914 Middle Autumn Alley Maple Grove Minnesota 56188 US,33,11,Tyler Lehmann,(507)111-9833,28,566-77-8899,4
-9,5993 Hazy Common Arlington Minnesota 55403 US,20,12,Murad Abduselam,(320)277-1852,0,123-45-4321,3 monthes
+9,5993 Hazy Common Arlington Minnesota 55403 US,20,12,Murad Abduselam,(320)277-1852,0,123-45-4321,3 months
 9,3909 Colonial Log Drive Lake Lillian Minnesota 56202 US,20,13,Leonel Messi,(612)578-6418,0,012-34-3210,1 year
-9,9094 Tawny Valley Sturgeon Lake Minnesota 55361 US,20,14,Christiano Ronaldo,(218)801-0228,0,012-34-5678,9 monthes
-9,6035 Sleepy Manor Minnesota Lake Minnesota 55627 US,20,15,Kobe Bryant,(612)798-9390,0,567-89-1012,2 monthes
+9,9094 Tawny Valley Sturgeon Lake Minnesota 55361 US,20,14,Christiano Ronaldo,(218)801-0228,0,012-34-5678,9 months
+9,6035 Sleepy Manor Minnesota Lake Minnesota 55627 US,20,15,Kobe Bryant,(612)798-9390,0,567-89-1012,2 months
