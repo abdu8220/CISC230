@@ -37,11 +37,6 @@ public class Zoo {
 		for ( Animal a : AnimalsList ) {
 			System.out.println(a);
 		}
-		//b-Feeding the zoo's animals
-		System.out.print("2*Feeding all of the zoo's animals:\n..................................\n");
-		for( Animal animal : AnimalsList ){
-			animal.Feed();
-		}
 		// **End Part1** //
 
 		//**Part2**//
@@ -62,18 +57,17 @@ public class Zoo {
 
 		//**Part 3**//
 
-		//a-Asking the zoo keeper to feed the animals
+		//a- Asking the zoo keeper to feed the animals
 		System.out.print("\n5* Zoo Keeper feed the animals:\n..................................\n");
 		((ZooKeeper) EmployeeList.get(1)).feedTheAnimals(AnimalsList);
 
 
-		//b-Zoo Manager pays all the employees
+		//b- Zoo Manager pays all the employees
 		System.out.print("\n6* Zoo Manager pays the employees:\n..................................\n");
 		((ZooManager) EmployeeList.get(0)).payEmployees(EmployeeList);
 
-		//c-Guest Service manager assign duties to his employees
+		//c- Guest Service manager assign duties to his employees
 		System.out.print("\n7* Guest Service manager assign duties to his employees:\n..................................\n");
-
 		((GuestSerManager) EmployeeList.get(6)).work(EmployeeList.get(7),"work in the gift shop",4);
 		((GuestSerManager) EmployeeList.get(6)).work(EmployeeList.get(8),"sell tickets at desk#2",8);
 		((GuestSerManager) EmployeeList.get(6)).work(EmployeeList.get(9),"distribute zoo's brochures in the parking area",2);
@@ -89,11 +83,11 @@ public class Zoo {
 		System.out.print("\n9* The Zoologist developing enrichments for the zoo's animals:\n..................................\n");
 
 		/*
-			Implementation here, please
+			list index 3
 		*/
 
 		//f- Veterinarian give phyiscal exam for the zoo's animals
-		System.out.print("\n10* Volunteer manager assign duties to the volunteers:\n..................................\n");
+		System.out.print("\n10* Veterinarian checks up all animals :\n..................................\n");
 
 		/*
 			Implementation here, please

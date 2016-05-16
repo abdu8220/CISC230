@@ -105,7 +105,6 @@ public  class Animal
 	public void feed(){
 		System.out.println( getName() + " some yummy " + getDiet());
 	}
-	public void Feed(){}
 
 	/**
 	 * Move moves the animal to a new location on the zoo

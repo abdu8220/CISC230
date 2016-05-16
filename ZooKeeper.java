@@ -16,10 +16,10 @@ public int getNumOfAnimals(){return numOfAnimals;}
 		this.numOfAnimals = numOfAnimals;
 	}
 		
-	public void feedTheAnimals(ArrayList<Animal> animal)
-	{
+	public void feedTheAnimals(ArrayList<Animal> animal){
 		for(Animal a : animal){
-			System.out.print(this.name + " fed " ); a.feed();
+			System.out.print(this.name + " fed " ); 
+			a.feed();
 		}
 	}
 	
