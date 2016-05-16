@@ -103,7 +103,7 @@ public  class Animal
 	 */
 
 	public void feed(){
-		System.out.println( getName() + " some yummy " + getDiet());
+		System.out.println( getName() + " some yummy " + getDiet() + " at " + getFeeding_Schedule() + ":00 pm");
 	}
 
 	/**

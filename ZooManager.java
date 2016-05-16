@@ -11,9 +11,12 @@ public class ZooManager extends AnimalCM {
 public int numOfEmp;
 
 public int getNumOfEmp(){return numOfEmp;}
-	public ZooManager(String address, int hours, int ID, String name, String phone, double hourlypay, String SSN, int numOfEmp){
+	public ZooManager(String address, int hours, int ID, String name, String phone, double hourlypay, String SSN){
 			super(address,hours,ID,name,phone,hourlypay,SSN);
-			this.numOfEmp = numOfEmp;
+	}
+	
+	public void setNumEmp(int numOfEmp) {
+		this.numOfEmp = numOfEmp;
 	}
 	
 	public void payEmployees(ArrayList<Employee> employee){
@@ -28,4 +31,5 @@ public int getNumOfEmp(){return numOfEmp;}
 			info += "Number of zoo's employees: " + numOfEmp + " employees.\n";
 			return info;
 	}
+
 }

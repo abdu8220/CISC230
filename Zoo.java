@@ -20,7 +20,7 @@ public class Zoo {
 	static ArrayList<Employee> EmployeeList = new ArrayList<Employee>();
 
 	public static void main(String[] args){
-		fileName = "Animal.txt";
+		fileName = "src/Animal.txt";
 		file = new File(fileName);
 
 		try { scan = new Scanner(file); } catch (FileNotFoundException e) { e.printStackTrace(); }
@@ -158,13 +158,13 @@ public class Zoo {
 
 
 	public static void employeeFileHandle() throws IOException{
-		fileName = "Employee.txt";
+		fileName = "src/Employee.txt";
 		file = new File(fileName);
 		try { scan = new Scanner(file); } catch (FileNotFoundException e) { e.printStackTrace(); }
 
 		//Attributes for Employee:
 		String empAddress = "", empName = "", empPhone = "", empSSN = "", volPeriod ="";
-		int empHours = 0, empID = 0, empType = 0, numOfEmp=0, numOfAnimals=0, numOfVolunteers=0;
+		int empHours = 0, empID = 0, empType = 0, numOfVolunteers=0;
 		double empSalary = 0;
 
 		while (scan.hasNext()){
@@ -181,11 +181,9 @@ public class Zoo {
 
 			switch (empType){
 				case 1:
-					numOfEmp = Integer.parseInt(field.nextToken());
-					EmployeeList.add(new ZooManager(empAddress,empHours,empID,empName,empPhone,empSalary,empSSN,numOfEmp)); break;
+					EmployeeList.add(new ZooManager(empAddress,empHours,empID,empName,empPhone,empSalary,empSSN)); break;
 				case 2:
-					numOfAnimals = Integer.parseInt(field.nextToken());
-					EmployeeList.add(new ZooKeeper(empAddress,empHours,empID,empName,empPhone,empSalary,empSSN,numOfAnimals)); break;
+					EmployeeList.add(new ZooKeeper(empAddress,empHours,empID,empName,empPhone,empSalary,empSSN)); break;
 				case 3:
 					EmployeeList.add(new Zoologist(empAddress,empHours,empID,empName,empPhone,empSalary,empSSN)); break;
 				case 4:
@@ -206,6 +204,8 @@ public class Zoo {
 					System.out.println("Default Case");
 			}//end switch
 		}//end employee while loop
+		((ZooManager) EmployeeList.get(0)).setNumEmp(EmployeeList.size());
+		((ZooKeeper) EmployeeList.get(1)).setNumAnimal(AnimalsList.size());
 		scan.close();
 	}
 }

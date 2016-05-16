@@ -11,9 +11,8 @@ public class ZooKeeper extends AnimalCM {
 public int numOfAnimals;
 public int getNumOfAnimals(){return numOfAnimals;}
 
-	public ZooKeeper(String address, int hours, int ID, String name, String phone, double hourlypay, String SSN, int numOfAnimals){
+	public ZooKeeper(String address, int hours, int ID, String name, String phone, double hourlypay, String SSN){
 		super(address,hours,ID,name,phone,hourlypay,SSN);
-		this.numOfAnimals = numOfAnimals;
 	}
 		
 	public void feedTheAnimals(ArrayList<Animal> animal){
@@ -21,6 +20,10 @@ public int getNumOfAnimals(){return numOfAnimals;}
 			System.out.print(this.name + " fed " ); 
 			a.feed();
 		}
+	}
+	
+	public void setNumAnimal(int numOfAnimals) {
+		this.numOfAnimals = numOfAnimals;
 	}
 	
 	@Override
