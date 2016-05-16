@@ -33,7 +33,7 @@ public class Employee {
 		case "Vet":
 			return "Veterinarian";
 		case "VetTech":
-			return "Vet Tech";
+			return "Veterinarian Technician";
 		case "GuestSerManager":
 			return "Guest Service Manager";
 		case "GuestSerEmp":
