@@ -4,7 +4,7 @@
 4,7448 Round Rabbit Woods Varco Minnesota 55905 US,40,4,Michael Jackson,(320)411-7860,26,456-78-9123
 5,9771 High Diversion Alvarado Minnesota 55010 US,35,5,Lebron James,(651)255-0129,22,567-89-1234
 5,5157 Cotton Bear Farms Walters Minnesota 56745 US,40,6,Bakr Albakri,(952)398-9345,22,678-91-2345
-6,4464 Emerald Deer Corner Rushmore Minnesota 55185 US,40,7,Johnathon Marin-Romero,(612)935-3727,14,789-12-3456
+6,4464 Emerald Deer Corner Rushmore Minnesota 55185 US,40,7,Johnathan Marin-Romero,(612)935-3727,14,789-12-3456
 7,8644 Lazy Timber Court Danesville Minnesota 56473 US,40,8,Michael Jordan,(612)775-6173,14,891-23-4567
 7,3517 Sunny Landing Saginaw Minnesota 56109 US,40,9,Jackson five,(507)348-2303,14,912-34-5678
 7,685 Heather Fox Abbey Salo Corner Minnesota 55048 US,40,10,Beyonce Knowles,(320)252-5231,12,112-23-3445
