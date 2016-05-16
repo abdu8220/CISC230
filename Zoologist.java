@@ -5,16 +5,26 @@
  * @since			5/4/16
  */
 public class Zoologist extends AnimalCM {
-
-public Zoologist(String address, int hours, int ID, String name, String phone, double hourlypay, String SSN){
+	String[] enrichments = {"Sprinkler", "bird feeder", "treasure chest","ball"};
+	public Zoologist(String address, int hours, int ID, String name, String phone, double hourlypay, String SSN){
 		super(address,hours,ID,name,phone,hourlypay,SSN);
 	}
 
-	//some method needs to go here, check later
+	public void devlopEnrichment(Animal a){
+		System.out.print(getName() + " enriches " + a.getName() + " with ");
+		if(a instanceof Amphibian){
+			System.out.println(enrichments[0]);
+		}else if(a instanceof Bird){
+			System.out.println(enrichments[1]);
+		}else if(a instanceof Fish){
+			System.out.println(enrichments[2]);
+		}else if(a instanceof Mammal){
+			System.out.println(enrichments[3]);
+		}
+	}
 
 	@Override
-	public String toString()
-	{
+	public String toString(){
 		String info = super.toString();
 		return info;
 	}

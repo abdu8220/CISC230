@@ -20,7 +20,7 @@ public class Zoo {
 	static ArrayList<Employee> EmployeeList = new ArrayList<Employee>();
 
 	public static void main(String[] args){
-		fileName = "src/Animal.txt";
+		fileName = "Animal.txt";
 		file = new File(fileName);
 
 		try { scan = new Scanner(file); } catch (FileNotFoundException e) { e.printStackTrace(); }
@@ -81,18 +81,17 @@ public class Zoo {
 
 		//e- The Zoologist develop enrichments for the zoo's animals
 		System.out.print("\n9* The Zoologist developing enrichments for the zoo's animals:\n..................................\n");
-
-		/*
-			list index 3
-		*/
+		for(Animal a : AnimalsList){
+			((Zoologist) EmployeeList.get(2)).devlopEnrichment(a);
+		}
 
 		//f- Veterinarian give phyiscal exam for the zoo's animals
-		System.out.print("\n10* Veterinarian checks up all animals :\n..................................\n");
-
-		/*
-			Implementation here, please
-		*/
-
+		System.out.print("\n10* Veterinarian examines all animals:\n..................................\n");
+		ArrayList<Animal> sick = ((Vet) EmployeeList.get(3)).examine(AnimalsList);
+		
+		//g- Veterinarian tech gives vaccinces to sick animals
+		System.out.print("\n10* Veterinarian Technician creates vaccines for sick animals:\n..................................\n");
+		((VetTech) EmployeeList.get(4)).vaccinate(sick);
 
 		//**End Part3**//
 
@@ -153,12 +152,11 @@ public class Zoo {
 			}//end switch
 		}//end Animal while loop
 		scan.close();
-
-		}
+	}
 
 
 	public static void employeeFileHandle() throws IOException{
-		fileName = "src/Employee.txt";
+		fileName = "Employee.txt";
 		file = new File(fileName);
 		try { scan = new Scanner(file); } catch (FileNotFoundException e) { e.printStackTrace(); }
 
