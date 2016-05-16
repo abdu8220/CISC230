@@ -20,7 +20,7 @@ public class Zoo {
 	static ArrayList<Employee> EmployeeList = new ArrayList<Employee>();
 
 	public static void main(String[] args){
-		fileName = "src/Animal.txt";
+		fileName = "Animal.txt";
 		file = new File(fileName);
 
 		try { scan = new Scanner(file); } catch (FileNotFoundException e) { e.printStackTrace(); }
@@ -158,7 +158,7 @@ public class Zoo {
 
 
 	public static void employeeFileHandle() throws IOException{
-		fileName = "src/Employee.txt";
+		fileName = "Employee.txt";
 		file = new File(fileName);
 		try { scan = new Scanner(file); } catch (FileNotFoundException e) { e.printStackTrace(); }
 
