@@ -36,7 +36,4 @@ public class Fish extends Animal
 			info += "Water temperature: " + getWaterTemp() + " F.\n";
 			return info;
 	}
-	public void Feed(){
-		System.out.println(this.Name +" is fed " + this.Diet + " at " + this.Feeding_Schedule +":00 P.M.");
-	}
 }
