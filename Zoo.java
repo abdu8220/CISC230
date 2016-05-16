@@ -34,6 +34,8 @@ public class Zoo {
 		//a-Printing toString of AnimalsList
 		System.out.println("***WELCOME to Minnestoa Zoo's Java-Implementation***");
 		System.out.print("1* Information about current zoo's animals:\n..................................\n");
+
+		//b- makes the animal feed themselves
 		for ( Animal a : AnimalsList ) {
 			System.out.println(a);
 		}
@@ -68,16 +70,16 @@ public class Zoo {
 
 		//c- Guest Service manager assign duties to his employees
 		System.out.print("\n7* Guest Service manager assign duties to his employees:\n..................................\n");
-		((GuestSerManager) EmployeeList.get(6)).work(EmployeeList.get(7),"work in the gift shop",4);
-		((GuestSerManager) EmployeeList.get(6)).work(EmployeeList.get(8),"sell tickets at desk#2",8);
-		((GuestSerManager) EmployeeList.get(6)).work(EmployeeList.get(9),"distribute zoo's brochures in the parking area",2);
+		((GuestSerManager) EmployeeList.get(6)).work(((GuestSerEmp)EmployeeList.get(7)),"work in the gift shop",4);
+		((GuestSerManager) EmployeeList.get(6)).work(((GuestSerEmp)EmployeeList.get(8)),"sell tickets at desk#2",8);
+		((GuestSerManager) EmployeeList.get(6)).work(((GuestSerEmp)EmployeeList.get(9)),"distribute zoo's brochures in the parking area",2);
 
 		//d- Volunteer manager schedule volunteers for work hours
 		System.out.print("\n8* Volunteer manager assign duties to the volunteers:\n..................................\n");
-		((VolunteerManager) EmployeeList.get(10)).work(EmployeeList.get(11),"interpret artifacts along the Tropicals trail",5);
-		((VolunteerManager) EmployeeList.get(10)).work(EmployeeList.get(12),"assist guest seating in the cow milking parlor",2);
-		((VolunteerManager) EmployeeList.get(10)).work(EmployeeList.get(13),"handle data input for the Education Department",3);
-		((VolunteerManager) EmployeeList.get(10)).work(EmployeeList.get(14),"replenish merchandise on the gift store shelves",2);
+		((VolunteerManager) EmployeeList.get(10)).work(((Volunteer)EmployeeList.get(11)),"interpret artifacts along the Tropicals trail",5);
+		((VolunteerManager) EmployeeList.get(10)).work(((Volunteer)EmployeeList.get(12)),"assist guest seating in the cow milking parlor",2);
+		((VolunteerManager) EmployeeList.get(10)).work(((Volunteer)EmployeeList.get(13)),"handle data input for the Education Department",3);
+		((VolunteerManager) EmployeeList.get(10)).work(((Volunteer)EmployeeList.get(14)),"replenish merchandise on the gift store shelves",2);
 
 		//e- The Zoologist develop enrichments for the zoo's animals
 		System.out.print("\n9* The Zoologist developing enrichments for the zoo's animals:\n..................................\n");
@@ -88,7 +90,7 @@ public class Zoo {
 		//f- Veterinarian give phyiscal exam for the zoo's animals
 		System.out.print("\n10* Veterinarian examines all animals:\n..................................\n");
 		ArrayList<Animal> sick = ((Vet) EmployeeList.get(3)).examine(AnimalsList);
-		
+
 		//g- Veterinarian tech gives vaccinces to sick animals
 		System.out.print("\n10* Veterinarian Technician creates vaccines for sick animals:\n..................................\n");
 		((VetTech) EmployeeList.get(4)).vaccinate(sick);

@@ -13,8 +13,8 @@ public class VolunteerManager extends GuestServices {
 		this.numOfVolunteers = numOfVolunteers;
 	}
 
-	public void work (Employee GMEmp, String instruction, int Hours){
-		System.out.println( this.name + " assigns " + GMEmp.getName() + " to " + instruction + " for the next " + Hours + " hours.");
+	public void work (Volunteer volunteer, String instruction, int Hours){
+		System.out.println( this.name + " assigns " + volunteer.getName() + " to " + instruction + " for the next " + Hours + " hours.");
 	}
 
 	public String toString(){
